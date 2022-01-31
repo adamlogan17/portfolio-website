@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>40293585</title>
+
+        <link href="css/generalStyle.css" type="text/css" rel="stylesheet">
+
+        <link href="css/contactUsStyle.css" type="text/css" rel="stylesheet">
+
+        <script src="js/contactScript.js"></script>
+        
+    </head>
+    
+    <body>
+    
+        <div id="wrapper">
+            
+            <h1>Giants Causeway</h1>
+            <br>
+            
+            <div id="nav">
+                <ul>
+                    <li><a href="mainPage.html">Landmark Information</a></li>
+                    <li><a href="contactUsPage.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <br>
+            <div class="row">
+                <h2>Ask Us A Question!</h2>
+
+                <form action="mailto:alogan20@qub.ac.uk" method="post" enctype="text/plain" id="questionFrom">
+                    <fieldset>
+                        <legend>Your Contact Details:</legend>
+                        <label for="txtEmail">Email Address: </label>                
+                        <input type="email" name="txtEmail" id="txtEmail">
+
+                        <br>
+                        <label for="fullName">Name: </label>             
+                        <input type="text" name="fullName" id="fullName" size="15" maxlength="40"> 
+                        <br>
+                        <br>
+
+                        <fieldset>
+                            <legend>Nature Of Question:</legend>
+                            <label for="rdoOpen">Opening Times</label> 
+                            <input type="radio" name="natureOfQ" id="rdoOpen" value="openingTimes">
+
+                            <br>
+                            <label for="rdoInfo">Travel Information</label>
+                            <input type="radio" name="natureOfQ" id="rdoInfo" value="moreInfo">
+    
+                            <br>
+                            <label for="rdoOther">Other</label>
+                            <input type="radio" name="natureOfQ" id="rdoOther" value="other">
+                        </fieldset>
+                        <br>
+                        <br>
+
+                        <fieldset>
+                            <legend>Question:</legend>
+                            <textarea id="question" name="question">Type your question here.</textarea>
+                        </fieldset>
+                        
+                        <input onclick="checkInput();" type="submit" value="Submit" id="submit">
+        
+                    </fieldset>
+                </form>
+            </div>
+
+            <div class="row">
+                <h2>Contact Information</h2>
+                <br>
+                <address>
+                    Email: <a href="mailto:alogan20@qub.ac.uk">alogan20@qub.ac.uk</a><br>
+                    Phone Number: 028 9091 5613<br>
+                    Address: 29 Donegall Rd, Belfast BT12 5JJ
+                </address>
+            </div>
+        </div>  
+        
+        <br> <!-- This break at the end allows the white
+            space at the bottom of the screen -->
+
+    </body>    
+</html>

@@ -17,7 +17,7 @@ html {
     padding:2%;
     background-color: inherit;
     overflow: hidden;
-    margin-top:25px;
+    /*margin-top:25px;*/
 }
 
 #grouped-socials {
@@ -65,6 +65,7 @@ html {
     width: 70%;
     float: left; 
     padding:2%; 
+
     /*border-left: #EDF5E1 1px solid;*/
 }
 
@@ -140,6 +141,26 @@ html {
 #socials {
     background-color: #313552;
     margin-bottom: 5%;
+}
+
+table {
+    width: 80%;
+    margin: auto;
+}
+
+
+.level {
+    padding-top: 10px;
+}
+
+.outer-title {
+    display: flex;
+    align-items: center;
+}
+
+.inner-title {
+    align-items: center;
+    text-align: center;
 }
 
 /* RESIZING THE PAGE */

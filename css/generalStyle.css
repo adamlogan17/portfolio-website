@@ -9,6 +9,7 @@
 
 html {
     background-color: #1f2235;
+    scroll-behavior: smooth;
 }
 
 #wrapper, #grouped-socials {
@@ -69,15 +70,25 @@ html {
     /*border-left: #EDF5E1 1px solid;*/
 }
 
+#nav-bar {
+    position:fixed;
+    top: 0%;
+    width: inherit;
+    background-color: inherit;
+    z-index: 1;
+    border-radius: 0px;
+}
+
 #nav {
     justify-content: right;
 }
 
+
 #nav a {
-    display: block;
-    width: 100px;
+    margin-left: 50px;
     float: left;
     text-align: center;
+    border:2px solid transparent;
 }
 
 #nav a:hover {
@@ -85,49 +96,14 @@ html {
     text-decoration: none;
     border-bottom: 2px solid #0496FF;
     transition: 0.5s ease;
-} */
+} 
 
 #nav-title {
     position: relative;
     right: 0px;
 }
 
-/* NAV BAR CSS 
-#nav ul {
-    border-radius: 10px;
-    list-style-type: none;
-    overflow: auto;
-}
-
-#nav li {
-    float: left;
-    margin: auto;
-    width: 20%;
-}
-
-#nav li a {
-    display: block;
-    padding: 16px;
-    margin:auto;
-    text-align: center;
-    background-color: #379683;
-    color: black;
-}
-
-#nav li a:link {
-    text-decoration: none;
-}
-
-#nav li a:hover {
-    background-color: #8EE4AF;
-
-    transition: 0.5s ease;
-    text-decoration: none;
-    border-bottom: 2px solid #0496FF;
-    transition: 0.5s ease;
-} */
-
-.media-link {
+.media-link, .media-link:hover {
     padding: 1rem;
     color: aliceblue;
     background-color: #313552;
@@ -136,6 +112,12 @@ html {
     width: 300px;
     float: left;
     margin: auto;
+}
+
+.media-link:hover {
+    background-color: #0496ff;
+    text-decoration: none;
+    transition: 0.5s ease;
 }
 
 #socials {
@@ -165,6 +147,7 @@ table {
 
 /* RESIZING THE PAGE */
 @media screen and (max-width: 750px) {
+    /*
     #wrapper {
         width: 100%;
     }
@@ -174,9 +157,16 @@ table {
         width:100%;
         border: 0px;
     }
+
+    .outer-title {
+        justify-content: center;
+    }*/
+
+
 }
 
 @media screen and (max-width: 360px) {
+    /*
     #wrapper {
         width: 350px;
     }
@@ -186,14 +176,46 @@ table {
         width:100%;
         border: 0px;
     }
+
+    #nav a {
+        margin-left: 10px;
+    }*/
 }
 
 @media screen and (max-width: 1150px) {
+    /*
     .third-col {
         clear:both;
         width:100%;
         border: 0px;
         justify-content: center;
+    }*/
+
+    
+    #wrapper {
+        width: 100%;
+    }
+    
+    .col1, .col2, .half-col, .third-col {
+        clear:both;
+        width:100%;
+        border: 0px;
+    }
+
+    .outer-title {
+        justify-content: center;
+    }
+
+    #nav-bar {
+        position: inherit;
+    }
+
+    .nav-title {
+        width: 30%;
+    }
+
+    #nav {
+        width: 70%;
     }
 
     .media-link {

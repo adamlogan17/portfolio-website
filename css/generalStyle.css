@@ -21,6 +21,10 @@ html {
     /*margin-top:25px;*/
 }
 
+.section {
+    padding-top: 70px;
+}
+
 #grouped-socials {
     margin-top: 0px;
     padding-top: 0%;
@@ -30,7 +34,6 @@ html {
 .row {
     margin: auto;
     overflow: auto;
-    /*border: #EDF5E1 1px solid;*/
     border-radius: 50px;
     margin-bottom: 2%;
     justify-content: center;
@@ -66,8 +69,6 @@ html {
     width: 70%;
     float: left; 
     padding:2%; 
-
-    /*border-left: #EDF5E1 1px solid;*/
 }
 
 #nav-bar {
@@ -77,6 +78,7 @@ html {
     background-color: inherit;
     z-index: 1;
     border-radius: 0px;
+    margin-top: 0px;
 }
 
 #nav {
@@ -98,10 +100,11 @@ html {
     transition: 0.5s ease;
 } 
 
+/*
 #nav-title {
     position: relative;
     right: 0px;
-}
+}*/
 
 .media-link, .media-link:hover {
     padding: 1rem;
@@ -160,11 +163,7 @@ table {
         justify-content: center;
     }
 
-    #nav-bar {
-        position: inherit;
-    }
-
-    .nav-title {
+    #nav-title {
         width: 30%;
     }
 
@@ -179,6 +178,31 @@ table {
         -ms-transform: translateX(-50%);
         transform: translateX(-50%);
     }
+
+    #profile-col {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    #nav, #nav-title {
+        width: 100%;
+        text-align: center;
+    }
+
+    #nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    #nav a {
+        margin: auto;
+    }
+
+    .section {
+        padding-top: 120px;
+    }
+
 }
 
 @media screen and (min-width: 1250px) {
@@ -193,7 +217,7 @@ table {
     }
 }
 
-/* RESIZING THE PAGE WITH HAVING MOBILE VIEW THE LARGE PAGE VIEW*/
+/* RESIZING THE PAGE WITH MOBILE VIEW BEING LARGE PAGE VIEW*/
 /*
 @media screen and (max-width: 750px) {
     #wrapper {

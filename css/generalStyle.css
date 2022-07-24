@@ -12,6 +12,11 @@ html {
     scroll-behavior: smooth;
 }
 
+#background {
+    overflow: hidden;
+    background-color: #1f2235;
+}
+
 #wrapper, #grouped-socials {
     width:90%;
     margin: auto;
@@ -21,6 +26,28 @@ html {
     /*margin-top:25px;*/
 }
 
+#about {
+    background-color: #313552;
+    border-radius: 50px;
+}
+
+.m-heading {
+    font-family: "Roboto Slab", serif;
+    font-size: 5rem;
+}
+
+.b-heading {
+    color: #0496FF;
+}
+
+#intro, .place {
+    margin: auto;
+}
+
+.about-text, .m-heading, .b-heading, #hello-intro, p, h4, h3 {
+    text-align: center;
+}
+
 .section {
     padding-top: 70px;
 }
@@ -28,6 +55,11 @@ html {
 #grouped-socials {
     margin-top: 0px;
     padding-top: 0%;
+}
+
+.icon {
+    margin: auto;
+    margin-left: 60%;
 }
 
 /* STYLE OF CONTENT */
@@ -74,7 +106,7 @@ html {
 #nav-bar {
     position:fixed;
     top: 0%;
-    width: inherit;
+    width: 100%;
     background-color: inherit;
     z-index: 1;
     border-radius: 0px;
@@ -106,6 +138,27 @@ html {
     right: 0px;
 }*/
 
+img {
+    width: 100%;
+    margin:auto;  
+    border-radius: 25px;
+}
+
+.card {
+    margin: 20px;
+    width: 300px;
+}
+
+.card-text, .card-title {
+    text-align: center;
+    color: black;
+}
+
+.card-body {
+    text-align: center;
+    align-items: center;
+}
+
 .media-link, .media-link:hover {
     padding: 1rem;
     color: aliceblue;
@@ -133,6 +186,11 @@ table {
     margin: auto;
 }
 
+table .mark {
+    background-color: inherit;
+    text-align: center;
+    padding-left: 10%;
+}
 
 .level {
     padding-top: 10px;
@@ -150,7 +208,7 @@ table {
 
 @media screen and (max-width: 1150px) {
     #wrapper {
-        width: 100%;
+        width: 95%;
     }
     
     .col1, .col2, .half-col, .third-col {
@@ -188,6 +246,7 @@ table {
     #nav, #nav-title {
         width: 100%;
         text-align: center;
+        font-size: 0.8rem;
     }
 
     #nav {
@@ -201,6 +260,10 @@ table {
 
     .section {
         padding-top: 120px;
+    }
+
+    td, table .mark {
+        padding-bottom: 5%;
     }
 
 }

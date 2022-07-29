@@ -107,10 +107,11 @@ html {
     position:fixed;
     top: 0%;
     width: 100%;
-    background-color: inherit;
     z-index: 1;
     border-radius: 0px;
     margin-top: 0px;
+    height: 90px;
+    background-color: inherit;
 }
 
 #nav {
@@ -186,10 +187,8 @@ table {
     margin: auto;
 }
 
-table .mark {
-    background-color: inherit;
-    text-align: center;
-    padding-left: 10%;
+td {
+    padding-right: 10%;
 }
 
 .level {

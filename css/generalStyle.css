@@ -29,6 +29,13 @@ html {
 #about {
     background-color: #313552;
     border-radius: 50px;
+    margin: auto;
+}
+
+#tech-skills-logos {
+    display: block;
+    margin: auto;
+    width: 70%;
 }
 
 .m-heading {

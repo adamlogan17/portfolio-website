@@ -48,7 +48,7 @@
                     
                     <div class="half-col" id="profile-col">
                         <figure>
-                            <img src="images/profile_image2.png" alt="Profile Picture of Adam Logan">
+                            <img id="techSkills" src="images/profile_image2.png" alt="Profile Picture of Adam Logan">
                         </figure>
                     </div>
                 </div>
@@ -59,37 +59,51 @@
                             About me.
                         </h3>
                         
-                        <h1 class="m-heading">
-                            A little bit about me.
-                        </h1>
-                
-                        <p class="about-text">
-                            I am currently studying Software
-                            Engineering with Digital Technology (PwC)
-                            at Queens University Belfast.
-                        </p>
+                        <div id="general-description">
+                            <h1 class="m-heading">
+                                A little bit about me
+                            </h1>
+                    
+                            <p class="about-text">
+                                I am currently studying Software
+                                Engineering with Digital Technology (PwC)
+                                at Queens University Belfast.
+                            </p>
+    
+                            <p class="about-text">
+                                I enjoy educating people on the impact of
+                                technology and how to use certain
+                                technologies as demonstrated within my
+                                role assisting in junior IT classes.
+                            </p>
+    
+                            <p class="about-text">
+                                I am also an active member in the Queen's
+                                University Computing Society by attending
+                                talks hosted by the society and by
+                                participating within the 2020 Hack the
+                                COVID Hackathon. Within this event I,
+                                along with a team, presented our solution
+                                to a coronavirus specific problem to a
+                                panel of judges. I also participated in 
+                                the 2021 Pediatrics Hackathon, in which 
+                                I developed a mock app to assist in the 
+                                flow of information from a responding 
+                                paramedic to a specialist.
+                            </p>
+                        </div>
 
-                        <p class="about-text">
-                            I enjoy educating people on the impact of
-                            technology and how to use certain
-                            technologies as demonstrated within my
-                            role assisting in junior IT classes.
-                        </p>
+                        <div id="skills">
+                            <div id="technical-skills">
+                                <h1 class="m-heading">
+                                    Technical Skills
+                                </h1>
 
-                        <p class="about-text">
-                            I am also an active member in the Queen's
-                            University Computing Society by attending
-                            talks hosted by the society and by
-                            participating within the 2020 Hack the
-                            COVID Hackathon. Within this event I,
-                            along with a team, presented our solution
-                            to a coronavirus specific problem to a
-                            panel of judges. I also participated in 
-                            the 2021 Pediatrics Hackathon, in which 
-                            I developed a mock app to assist in the 
-                            flow of information from a responding 
-                            paramedic to a specialist.
-                        </p>
+                                <figure>
+                                    <img id="tech-skills-logos" src="images/currentTechSkills.png" alt="Tech Skills Logos"/>
+                                </figure>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
@@ -108,7 +122,7 @@
     
                     <div class="row">
                         <div class="card">
-                            <img src="images/webTech.png" alt="Card image cap"/>
+                            <img src="images/webTech.png" alt="HTML, CSS and JavaScript Logos"/>
             
                             <div class="card-body">
                                 <h5 class="card-title">Web Technology Coursework</h5>
@@ -121,7 +135,7 @@
                         </div>
     
                         <div class="card">
-                            <img src="images/javaLogo2.png" alt="Card image cap"/>
+                            <img src="images/javaLogo2.png" alt="Java Logo"/>
             
                             <div class="card-body">
                                 <h5 class="card-title">Programming Coursework</h5>
@@ -133,7 +147,7 @@
                         </div>
     
                         <div class="card">
-                            <img src="images/pythonLogo2.png" alt="Card image cap"/>
+                            <img src="images/pythonLogo2.png" alt="Python Logo"/>
             
                             <div class="card-body">
                                 <h5 class="card-title">A-Level Coursework</h5>
@@ -146,7 +160,7 @@
                         </div>
 
                         <div class="card">
-                            <img src="images/javaLogo2.png" alt="Card image cap"/>
+                            <img src="images/javaLogo2.png" alt="Java Logo"/>
             
                             <div class="card-body">
                                 <h5 class="card-title">Systems Development Coursework</h5>
@@ -158,7 +172,7 @@
                         </div>
 
                         <div class="card">
-                            <img src="images/javaLogo2.png" alt="Card image cap"/>
+                            <img src="images/javaLogo2.png" alt="Java Logo"/>
             
                             <div class="card-body">
                                 <h5 class="card-title">Service Oriented Programming Coursework</h5>
@@ -182,8 +196,49 @@
                         </div>
                     </div>
 
-                    <!-- The 'PwC' div is to group related 'row' divs together, this has no effect on the code -->
-                    <div id="PwC">
+                    <!-- The 'Second-Placement-PwC' div is to group related 'row' divs together, this has no effect on the code -->
+                    <div id="Second-Placement-PwC">
+                        <div class="row">
+                            <div class="col1 outer-title">
+                                <div class = "inner-title">
+                                    <h3>
+                                        PwC
+                                    </h3>
+                                    <p><i>13/06/2022 – 19/08/2022</i></p>
+                                </div>
+                            </div>
+                            
+                            <div class="col2">
+                                <h4>
+                                    Technology Consultant
+                                </h4>
+                                <p>
+                                    As part of my apprenticeship program, I completed a 10-week placement with PwC over summer.
+                                    Within this placement, I developed two prototype applications, one which monitors temperature
+                                    and humidity sensors and another that acts as a ride management application, for a theme park. 
+                                    These prototypes were developed using Vantiq which is an IoT processing platform. 
+                                    The purpose of these prototypes, was to test if Vantiq is a viable platform for 
+                                    PwC to use when developing smart venue and smart retail solutions.
+                                </p>
+
+                                <p>
+                                    During the course of developing these prototypes I created several test harnesses which would 
+                                    simulate data entering Azure. The first test harness that was created simulated temperature and 
+                                    humidity sensors and the second test harness, which was developed, simulated people entering a queue
+                                    for a ride. These test harnesses, are Web Apps that are deployed on Azure and were developed in 
+                                    <i>Python</i> and used <i>Flask</i>, the <i>Azure SDK</i>, <i>HTML and CSS</i>.
+                                </p> 
+                                
+                                <p>
+                                    I not only developed and improved on the technical skills listed above, but I also demonstrated my ability to 
+                                    <i>work autonomously</i>, <i>manage a project</i> and <i>create innovative solutions</i> to real world business problems.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- The 'First-Placement-PwC' div is to group related 'row' divs together, this has no effect on the code -->
+                    <div id="First-Placement-PwC">
                         <div class="row">
                             <div class="col1 outer-title">
                                 <div class = "inner-title">
@@ -199,8 +254,7 @@
                                     Technology Consultant
                                 </h4>
                                 <p>
-                                    As part of my apprenticeship program, I completed a 10-week
-                                    placement with PwC over summer. Within the first half of this
+                                    Within the first half of my first summer
                                     placement, I was trained on several technologies such as <i>Azure</i>,
                                     <i>Alteryx</i>, <i>UiPath</i> and <i>excel</i>.
                                 </p>

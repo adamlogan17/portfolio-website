@@ -167,6 +167,15 @@ img {
     align-items: center;
 }
 
+.logo {
+    width: 100px;
+    display: block;
+}
+
+.logo-no-bg {
+    border-radius: 0px;
+}
+
 .media-link, .media-link:hover {
     padding: 1rem;
     color: aliceblue;
@@ -203,6 +212,7 @@ td {
 }
 
 .outer-title {
+    /* needed as this centers the inner-title vertically */
     display: flex;
     align-items: center;
 }
@@ -210,6 +220,7 @@ td {
 .inner-title {
     align-items: center;
     text-align: center;
+    display: block;
 }
 
 @media screen and (max-width: 1150px) {

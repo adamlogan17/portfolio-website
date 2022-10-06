@@ -69,6 +69,18 @@ html {
     margin-left: 60%;
 }
 
+/* 
+Seperate padding sizes is needed for each icon due to the length of the word it depends on.
+This is just used for small adjustments, hence why margin isn't used.
+ */
+#email-icon {
+    padding-left: 20px;
+}
+
+#github-icon {
+    padding-left: 10px;
+}
+
 /* STYLE OF CONTENT */
 .row {
     margin: auto;
@@ -184,7 +196,6 @@ img {
     border-radius: 0.5rem;
     width: 300px;
     float: left;
-    margin: auto;
 }
 
 .media-link:hover {
@@ -212,7 +223,6 @@ td {
 }
 
 .text-title {
-    background-color: aqua;
     display: block;
     margin:auto;
 }

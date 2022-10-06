@@ -211,16 +211,10 @@ td {
     padding-top: 10px;
 }
 
-.outer-title {
-    /* needed as this centers the inner-title vertically */
-    display: flex;
-    align-items: center;
-}
-
-.inner-title {
-    align-items: center;
-    text-align: center;
+.text-title {
+    background-color: aqua;
     display: block;
+    margin:auto;
 }
 
 @media screen and (max-width: 1150px) {

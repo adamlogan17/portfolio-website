@@ -38,9 +38,21 @@ html {
     width: 70%;
 }
 
+#qualifications-list {
+    font-size: 1.1rem;
+    margin: auto;
+    padding: 20px;
+    width: fit-content;
+    list-style-position:outside;
+}
+
+#qualifications-list ul {
+    padding-left: 25px;
+}
+
 .m-heading {
     font-family: "Roboto Slab", serif;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .b-heading {

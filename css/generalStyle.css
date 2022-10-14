@@ -46,6 +46,18 @@ html {
     list-style-position:outside;
 }
 
+.hidden-link {
+    border-bottom:2px solid transparent;
+    color: #FFFFFF;
+}
+
+.hidden-link:hover {
+    transition: 0.5s ease;
+    text-decoration: none;
+    border-bottom: 2px solid #0496FF;
+    color: #FFFFFFba;
+}
+
 #qualifications-list ul {
     padding-left: 25px;
 }
@@ -161,7 +173,6 @@ This is just used for small adjustments, hence why margin isn't used.
     transition: 0.5s ease;
     text-decoration: none;
     border-bottom: 2px solid #0496FF;
-    transition: 0.5s ease;
 } 
 
 /*

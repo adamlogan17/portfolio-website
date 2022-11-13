@@ -18,6 +18,11 @@
         <!-- Adds the icon on the tab -->
         <link rel="shortcut icon" type="image/png" href="images/faviconBriefcase.png"/>
 
+        <!-- The javascript to create the collapsible -->
+        <script defer type="text/javascript" src="js/collapseAnimation.js"></script>
+
+        <link href="css/collapsibleStyle.css" type="text/css" rel="stylesheet">
+
     </head>
     
     <body>
@@ -230,7 +235,7 @@
                     <!-- The 'Second-Placement-PwC' div is to group related 'row' divs together, this has no effect on the code -->
                     <div id="Second-Placement-PwC">
                         <div class="row">
-                            <div class="col1 text-title">
+                            <div class="col1 center-horz">
                                 <h3>
                                     PwC
                                 </h3>
@@ -240,39 +245,73 @@
                                 </figure>
                             </div>
                             
-                            <div class="col2">
-                                <h4>
-                                    Technology Consultant
-                                </h4>
-                                <p>
-                                    As part of my apprenticeship program, I completed a 10-week placement with PwC over summer.
-                                    Within this placement, I developed two prototype applications, one which monitors temperature
-                                    and humidity sensors and another that acts as a ride management application, for a theme park. 
-                                    These prototypes were developed using Vantiq which is an IoT processing platform. 
-                                    The purpose of these prototypes, was to test if Vantiq is a viable platform for 
-                                    PwC to use when developing smart venue and smart retail solutions.
-                                </p>
+                            <div class="col2 center-horz">
+                                <div id="second-placement">
+                                    <button type="button" class="collapsible-header">
+                                        <h4 class="hidden-link all-collapse-text">
+                                            <span class="main-title">Placement 2</span> <span class="collapse-icon">+</span>
+                                        </h4>
+                                    </button>
+                                    <div class="collapsible-body">
+                                        <p>
+                                            As part of my apprenticeship program, I completed a 10-week placement with PwC over summer.
+                                            Within this placement, I developed two prototype applications, one which monitors temperature
+                                            and humidity sensors and another that acts as a ride management application, for a theme park. 
+                                            These prototypes were developed using Vantiq which is an IoT processing platform. 
+                                            The purpose of these prototypes, was to test if Vantiq is a viable platform for 
+                                            PwC to use when developing smart venue and smart retail solutions.
+                                        </p>
 
-                                <p>
-                                    During the course of developing these prototypes I created several test harnesses which would 
-                                    simulate data entering Azure. The first test harness that was created simulated temperature and 
-                                    humidity sensors and the second test harness, which was developed, simulated people entering a queue
-                                    for a ride. These test harnesses, are Web Apps that are deployed on Azure and were developed in 
-                                    <i>Python</i> and used <i>Flask</i>, the <i>Azure SDK</i>, <i>HTML and CSS</i>.
-                                </p> 
-                                
-                                <p>
-                                    I not only developed and improved on the technical skills listed above, but I also demonstrated my ability to 
-                                    <i>work autonomously</i>, <i>manage a project</i> and <i>create innovative solutions</i> to real world business problems.
-                                </p>
+                                        <p>
+                                            During the course of developing these prototypes I created several test harnesses which would 
+                                            simulate data entering Azure. The first test harness that was created simulated temperature and 
+                                            humidity sensors and the second test harness, which was developed, simulated people entering a queue
+                                            for a ride. These test harnesses, are Web Apps that are deployed on Azure and were developed in 
+                                            <i>Python</i> and used <i>Flask</i>, the <i>Azure SDK</i>, <i>HTML and CSS</i>.
+                                        </p> 
+                                        
+                                        <p>
+                                            I not only developed and improved on the technical skills listed above, but I also demonstrated my ability to 
+                                            <i>work autonomously</i>, <i>manage a project</i> and <i>create innovative solutions</i> to real world business problems.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div id="first-placement">
+                                    <button type="button" class="collapsible-header">
+                                        <h4 class="hidden-link all-collapse-text">
+                                            <span class="main-title">Placement 1</span> <span class="collapse-icon">+</span>
+                                        </h4>
+                                    </button>
+
+                                    <div class="collapsible-body">
+                                        <p>
+                                            Within the first half of my first 
+                                            placement, I was trained on several technologies such as <i>Azure</i>,
+                                            <i>Alteryx</i>, <i>UiPath</i> and <i>excel</i>.
+                                        </p>
+        
+                                        <p>
+                                            The second half of my placement I was placed within the configuration
+                                            team of a project which consisted of creating an online loan
+                                            application process. Within this project I worked with <i>salesforce</i>, and
+                                            more specifically <i>salesforce flows</i>, to make changes to the application
+                                            process, which the client requested. I also manage the commercials
+                                            and onboarding for a large project team (50+ colleagues), spanning
+                                            two continents (PwC UK, CTech Poland and PwC South Africa) which
+                                            demonstrates that my <i>ability to work within a multicultural team</i>.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- The 'First-Placement-PwC' div is to group related 'row' divs together, this has no effect on the code -->
+                    <!--
                     <div id="First-Placement-PwC">
                         <div class="row">
-                            <div class="col1 text-title">
+                            <div class="col1 center-horz">
                                 <h3>
                                     PwC
                                 </h3>
@@ -305,11 +344,12 @@
                             </div>
                         </div>
                     </div>
+                    -->
 
                     <!-- The 'Eason' div is to group related 'row' divs together, this has no effect on the code -->
                     <div id="Eason">
                         <div class="row">
-                            <div class="col1 text-title">
+                            <div class="col1 center-horz">
                                 <h3>
                                     Eason
                                 </h3>
@@ -339,7 +379,7 @@
                     <!-- The 'PSNI' div is to group related 'row' divs together, this has no effect on the code -->
                     <div id="PSNI">
                         <div class="row">
-                            <div class="col1 text-title">
+                            <div class="col1 center-horz">
                                 <h3>
                                     PSNI
                                 </h3>
@@ -368,7 +408,7 @@
                     <!-- The 'PwC' div is to group related 'row' divs together, this has no effect on the code -->
                     <div id="PwC">
                         <div class="row">
-                            <div class="col1 text-title">
+                            <div class="col1 center-horz">
                                 <h3>
                                     PwC
                                 </h3>
@@ -396,7 +436,7 @@
                     <!-- The 'Catalyst' div is to group related 'row' divs together, this has no effect on the code -->
                     <div id="Catalyst">
                         <div class="row">
-                            <div class="col1 text-title">
+                            <div class="col1 center-horz">
                                 <h3>
                                     Catalyst
                                 </h3>
@@ -426,7 +466,7 @@
                     <!-- The 'Ulster-University' div is to group related 'row' divs together, this has no effect on the code -->
                     <div id="Ulster-University">
                         <div class="row">
-                            <div class="col1 text-title">                
+                            <div class="col1 center-horz">                
                                 <h3>
                                     Ulster University
                                 </h3>
@@ -466,7 +506,7 @@
                     <!-- The 'QUB' div is to group related 'row' divs together, this has no effect on the code -->
                     <div id="QUB">
                         <div class="row">
-                            <div class="col1 text-title">
+                            <div class="col1 center-horz">
                                 <h3>
                                     Queen's University Belfast
                                 </h3>
@@ -569,7 +609,7 @@
                     <!-- The 'QUB' div is to group related 'row' divs together, this has no effect on the code -->
                     <div id="BHS">
                         <div class="row">
-                            <div class="col1 text-title">
+                            <div class="col1 center-horz">
                                     <h3 class="place">
                                         Belfast High School
                                     </h3>

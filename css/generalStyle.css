@@ -83,6 +83,10 @@ html {
     padding-top: 70px;
 }
 
+.exp-title, .collapse-icon {
+    font-size: 1.4rem;
+}
+
 #grouped-socials {
     margin-top: 0px;
     padding-top: 0%;

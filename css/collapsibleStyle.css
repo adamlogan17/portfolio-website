@@ -21,7 +21,8 @@
 
 }
 
-.collapsible-header .all-collapse-text, .collapsible-header .all-collapse-text .main-title {
+/* the class 'exp-title' is the text within the collapsible header */
+.collapsible-header .all-collapse-text, .collapsible-header .all-collapse-text .exp-title {
     float: left;
 }
 

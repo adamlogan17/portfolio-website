@@ -4,6 +4,6 @@ This folder contains all images used within the website itself and the images us
 
 The word document within this folder is used to create the 'currentTechSkills.png' along with the websites listed below.
 
-Remove the background of an image: https://www.remove.bg/upload 
+Remove the background of an image: https://www.remove.bg/upload or https://www.photoroom.com/background-remover/ 
 
 Improve the quality of an image: https://www.upscale.media/upload

@@ -290,7 +290,7 @@ td {
     }
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 960px) {
     #nav, #nav-title {
         width: 100%;
         text-align: center;
@@ -304,6 +304,10 @@ td {
 
     #nav a {
         margin: auto;
+    }
+
+    #nav-bar {
+        padding-bottom: 100px;
     }
 
     .section {
@@ -320,6 +324,12 @@ td {
         width: 100%;
     }
 
+}
+
+@media screen and (max-width: 890px) {
+    #nav-bar {
+        padding-bottom: 0px;
+    }
 }
 
 @media screen and (min-width: 1250px) {

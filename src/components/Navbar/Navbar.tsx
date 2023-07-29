@@ -53,7 +53,7 @@ export default function Navbar({props}:any) {
               </MDBNavbarItem>
 
               <MDBNavbarItem>
-                <MDBNavbarLink style={style} href='#'>About</MDBNavbarLink>
+                <MDBNavbarLink style={style} href='#about'>About</MDBNavbarLink>
               </MDBNavbarItem>
 
               <MDBNavbarItem>

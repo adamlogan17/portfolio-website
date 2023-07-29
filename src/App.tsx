@@ -5,6 +5,7 @@ import { createContext, useMemo, useState } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 
+// link and button color is set by primary.main
 const lightThemePalette = {
   primary: {
     main:'#000000'
@@ -19,13 +20,15 @@ const lightThemePalette = {
 
 const darkThemePalette = {
     primary: {
-      main: '#0a4275'
+      main: '#ffffff'
     },
     text: {
       primary:'#ffffff'
     },
     background: {
-      default:'#0a4275'
+      // #1f2235
+      // #0a4275
+      default:'#1f2235'
     }
 }
 const getDesignTokens = (mode: PaletteMode) => ({
@@ -69,6 +72,7 @@ function App() {
 
           <Navbar props={{toggleMode: colorMode.toggleColorMode, mode:mode, palette: mode === 'light' ? lightThemePalette : darkThemePalette}} />
           <h1>Hello!</h1>
+
           <Footer props={{toggleMode: colorMode.toggleColorMode, mode:mode, palette: mode === 'light' ? lightThemePalette : darkThemePalette}} />
         </ThemeProvider>
       </ColorModeContext.Provider>

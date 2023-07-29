@@ -6,7 +6,6 @@ import {
 } from 'mdb-react-ui-kit';
 
 /**
- * @todo make buttons, change colour depending on light mode or dark mode
  * @todo make top of footer have same effect as bottom of navbar
  * @returns 
  */
@@ -15,10 +14,11 @@ export default function Footer({props}:any) {
     color: props.palette.text.primary
   }
 
-  const BUTTONCOLOR:string = 'dark';
+  // The color is set by MDB and therefore can only be one of the following options
+  const BUTTONCOLOR:"primary" | "link" | "white" | "light" | "none" | "secondary" | "success" | "danger" | "warning" | "dark" | "muted" | "info" | "tertiary" | undefined = 'dark';
   
   return (
-    <MDBFooter className='text-center' expand='lg' light style={{ backgroundColor: props.palette.background.default }}>
+    <MDBFooter className='text-center shadow-5' expand='lg' light style={{backgroundColor: props.palette.background.default }}>
       <MDBContainer className='p-4 pb-0 text-white'>
         <section className='mb-4'>
 

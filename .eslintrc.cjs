@@ -14,5 +14,7 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    // allows the 'any' type to be used {@link https://typescript-eslint.io/rules/no-explicit-any/}
+    "@typescript-eslint/no-explicit-any": "off"
   },
 }

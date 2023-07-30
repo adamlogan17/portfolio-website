@@ -19,7 +19,7 @@ import { Paper } from '@mui/material';
 import '../../layout.css';
 
 export default function Navbar({props}:any) {
-  const [showNav, setshowNav] = useState(false);
+  const [showNav, setShowNav] = useState(false);
 
   const style = {
     color: props.palette.text.primary
@@ -29,14 +29,14 @@ export default function Navbar({props}:any) {
     <Paper sx={{borderRadius: '0px'}}>
       <MDBNavbar expand='lg'>
         <MDBContainer fluid id='page-wrapper'>
-          <MDBNavbarBrand style={style} href='#'>
-            <span>Adam Logan's Portfolio</span>
+          <MDBNavbarBrand style={style} >
+            <MDBNavbarLink href='/'>Adam Logan's Portfolio</MDBNavbarLink>
             <IconButton onClick={() => props.toggleMode()} >
               {props.mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
             </IconButton>
           </MDBNavbarBrand>
           
-          <MDBNavbarToggler style={style} onClick={() => setshowNav(!showNav)}>
+          <MDBNavbarToggler style={style} onClick={() => setShowNav(!showNav)}>
             <MDBIcon icon='bars' fas />
           </MDBNavbarToggler>
 
@@ -44,11 +44,6 @@ export default function Navbar({props}:any) {
 
           <MDBCollapse show={showNav} navbar >
             <MDBNavbarNav className='me-auto mb-2 mb-lg-0' style={{justifyContent:'right'}}>
-              <MDBNavbarItem>
-                <MDBNavbarLink style={style} href='#'>
-                  Home
-                </MDBNavbarLink>
-              </MDBNavbarItem>
 
               <MDBNavbarItem>
                 <MDBNavbarLink style={style} href='#about'>About</MDBNavbarLink>

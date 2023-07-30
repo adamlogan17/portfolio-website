@@ -1,7 +1,8 @@
 import { Link } from '@mui/material';
 import './Intro.css';
-import '../../layout.css'
-import CV from '../../assets/downloads/Adam-Logan-CV.pdf'
+import '../../layout.css';
+import CV from '../../assets/downloads/Adam-Logan-CV.pdf';
+import ProfilePic from '../../assets/images/profile_image2.png';
 
 export default function Intro() {
   
@@ -17,7 +18,7 @@ export default function Intro() {
       
       <div  className="half-col">
         <figure>
-          <img src="/src/assets/images/profile_image2.png" alt="Profile Picture of Adam Logan" />
+          <img id='profile-pic' src={ProfilePic} alt="Profile Picture of Adam Logan" />
         </figure>
       </div>
       

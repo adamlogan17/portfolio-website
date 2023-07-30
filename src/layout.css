@@ -1,7 +1,7 @@
 #page-wrapper {
   width:90%;
   margin: auto;
-  background-color: inherit;
+  /* background-color: inherit; */
   overflow: hidden;
   text-align: center;
 }
@@ -21,11 +21,7 @@
   margin: auto;
 }
 
-@media screen and (max-width: 1150px) {
-  #page-wrapper {
-    width: 95%;
-  }
-  
+@media screen and (max-width: 1150px) {  
   .half-col {
     clear:both;
     min-width: 100%;
@@ -34,8 +30,9 @@
   }
 }
 
-@media screen and (min-width: 1550px) {
+@media screen and (min-width: 1525px) {
   #page-wrapper {
-    width: 1550px;
+    /* Needs to be 90% of the min width to prevent jarring transition when changing screen size*/
+    width: calc(1525 * 0.9);
   }
 }

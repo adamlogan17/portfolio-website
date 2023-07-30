@@ -14,38 +14,36 @@ import {
 import Brightness7Icon from '@mui/icons-material/Brightness7';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import IconButton from '@mui/material/IconButton';
+import { Paper } from '@mui/material';
+
+import '../../layout.css';
 
 export default function Navbar({props}:any) {
-  const [showNavColorThird, setShowNavColorThird] = useState(false);
+  const [showNav, setshowNav] = useState(false);
 
   const style = {
     color: props.palette.text.primary
   }
   
   return (
-    <>
-      <MDBNavbar expand='lg' light style={{ backgroundColor: props.palette.background.paper }}>
-        <MDBContainer fluid>
-          <MDBNavbarBrand style={style} href='#'>Adam Logan's Portfolio</MDBNavbarBrand>
+    <Paper sx={{borderRadius: '0px'}}>
+      <MDBNavbar expand='lg'>
+        <MDBContainer fluid id='page-wrapper'>
+          <MDBNavbarBrand style={style} href='#'>
+            <span>Adam Logan's Portfolio</span>
+            <IconButton onClick={() => props.toggleMode()} >
+              {props.mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
+            </IconButton>
+          </MDBNavbarBrand>
           
-          <MDBNavbarToggler
-            style={style}
-            type='button'
-            data-target='#navbarColor02'
-            aria-controls='navbarColor02'
-            aria-expanded='false'
-            aria-label='Toggle navigation'
-            onClick={() => setShowNavColorThird(!showNavColorThird)}
-          >
+          <MDBNavbarToggler style={style} onClick={() => setshowNav(!showNav)}>
             <MDBIcon icon='bars' fas />
           </MDBNavbarToggler>
 
-          <IconButton sx={{border: '1px solid black'}} onClick={() => props.toggleMode()} >
-            {props.mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
-          </IconButton>
+          
 
-          <MDBCollapse show={showNavColorThird} navbar>
-            <MDBNavbarNav className='me-auto mb-2 mb-lg-0'>
+          <MDBCollapse show={showNav} navbar >
+            <MDBNavbarNav className='me-auto mb-2 mb-lg-0' style={{justifyContent:'right'}}>
               <MDBNavbarItem>
                 <MDBNavbarLink style={style} href='#'>
                   Home
@@ -72,6 +70,6 @@ export default function Navbar({props}:any) {
           </MDBCollapse>
         </MDBContainer>
       </MDBNavbar>
-    </>
+    </Paper>
   );
 }

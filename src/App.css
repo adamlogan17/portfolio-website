@@ -1,8 +1,8 @@
 /* The below 2 styles are to force the footer to the bottom of the page */
 
-#page-wrapper {
+/* #page-wrapper {
   flex-grow: 1;
-}
+} */
 
 #wrapper {
   min-height: 100vh;

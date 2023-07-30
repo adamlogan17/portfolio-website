@@ -1,3 +1,4 @@
+import { Paper } from '@mui/material';
 import {
   MDBFooter,
   MDBContainer,
@@ -18,7 +19,8 @@ export default function Footer({props}:any) {
   const BUTTONCOLOR:"primary" | "link" | "white" | "light" | "none" | "secondary" | "success" | "danger" | "warning" | "dark" | "muted" | "info" | "tertiary" | undefined = 'dark';
   
   return (
-    <MDBFooter className='text-center shadow-5' expand='lg' light style={{backgroundColor: props.palette.background.paper }}>
+    <Paper sx={{borderRadius: '0px'}}>
+    <MDBFooter className='text-center shadow-5' expand='lg'>
       <MDBContainer className='p-4 pb-0 text-white'>
         <section className='mb-4'>
           <MDBBtn color={BUTTONCOLOR} style={{ backgroundColor: '#dd4b39' }} floating className='m-1' href='#!' role='button'>
@@ -42,5 +44,6 @@ export default function Footer({props}:any) {
         </a>
       </div>
     </MDBFooter>
+    </Paper>
   );
 }

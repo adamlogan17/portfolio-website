@@ -8,6 +8,7 @@ import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import Intro from './Section/Intro/Intro';
 import About from './Section/About/About';
+import Projects from './Section/Projects/Projects';
 
 // link and button color is set by primary.main
 const lightThemePalette = {
@@ -84,6 +85,8 @@ function App() {
             <Intro />
 
             <About />
+
+            <Projects />
           </div>
 
           <Footer props={{toggleMode: colorMode.toggleColorMode, mode:mode, palette: mode === 'light' ? lightThemePalette : darkThemePalette}} />

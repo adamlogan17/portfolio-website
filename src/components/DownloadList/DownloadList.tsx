@@ -23,42 +23,6 @@ export default function DownloadList(props:{items:any[]}) {
           </ListItemButton>
         </Link>
       )}
-
-      {/* <ListItemButton>
-        <ListItemAvatar>
-          <Avatar sx={{backgroundColor:'white'}} alt="Remy Sharp" src={Vantiq} />
-        </ListItemAvatar>
-        <ListItemText primary="Drafts" secondary="Hello" />
-      </ListItemButton>
-
-      <ListItemButton>
-        <ListItemAvatar>
-          <Avatar sx={{backgroundColor:'white'}} alt="Remy Sharp" src={PwC} />
-        </ListItemAvatar>
-        <ListItemText primary="Inbox" />
-      </ListItemButton>
-
-      <ListItemButton>
-        <ListItemAvatar>
-          <Avatar sx={{backgroundColor:'white'}} alt="Remy Sharp" src={DofEd} imgProps={{
-            sx: {
-              objectFit:'contain'
-            }
-          }}/>
-        </ListItemAvatar>
-        <ListItemText primary="Inbox" />
-      </ListItemButton>
-
-      <ListItemButton>
-        <ListItemAvatar>
-          <Avatar sx={{backgroundColor:'white'}} alt="Remy Sharp" src={QUB} imgProps={{
-            sx: {
-              objectFit:'contain'
-            }
-          }}/>
-        </ListItemAvatar>
-        <ListItemText primary="Inbox" />
-      </ListItemButton> */}
     </List>
   );
 }

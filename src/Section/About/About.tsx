@@ -10,6 +10,7 @@ import PwC from '../../assets/images/pwcLogo.png';
 import DofEd from '../../assets/images/dofeLogo.svg';
 import QUB from '../../assets/images/qubLogo.jpg';
 import Alteryx from '../../assets/images/alteryxLogo.png';
+import CCEA from '../../assets/images/cceaLogo.png';
 
 import CivicaAward from '../../assets/downloads/Qualifications/Civica-Award.pdf';
 import AI900 from '../../assets/downloads/Qualifications/Microsoft-AI-Fundamentals-Certificate.pdf';
@@ -84,7 +85,9 @@ const qualifications:any[] = [
     name:'Understanding Business, Language and Tourism (Level 2)',
     download:UBELT,
     avatar: {
-      src:PwC,
+      src:CCEA,
+      background:'white',
+      imgStyle: { objectFit:'contain' },
       alt:"CCEA Logo"
     }
   },

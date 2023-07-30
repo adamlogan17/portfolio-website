@@ -1,0 +1,42 @@
+#page-wrapper {
+  width:90%;
+  margin: auto;
+  padding:2%;
+  background-color: inherit;
+  overflow: hidden;
+  text-align: center;
+}
+
+.row {
+  margin: auto;
+  overflow: auto;
+  border-radius: 50px;
+  margin-bottom: 2%;
+  justify-content: center;
+}
+
+.half-col {
+  width:50%;
+  float:left;
+  padding:2%;
+  margin: auto;
+}
+
+@media screen and (max-width: 1150px) {
+  #page-wrapper {
+    width: 95%;
+  }
+  
+  .half-col {
+    clear:both;
+    min-width: 100%;
+    border: 0px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1550px) {
+  #page-wrapper {
+    width: 1550px;
+  }
+}

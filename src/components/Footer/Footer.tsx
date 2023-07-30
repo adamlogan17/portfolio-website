@@ -18,12 +18,11 @@ export default function Footer({props}:any) {
   const BUTTONCOLOR:"primary" | "link" | "white" | "light" | "none" | "secondary" | "success" | "danger" | "warning" | "dark" | "muted" | "info" | "tertiary" | undefined = 'dark';
   
   return (
-    <MDBFooter className='text-center shadow-5' expand='lg' light style={{backgroundColor: props.palette.background.default }}>
+    <MDBFooter className='text-center shadow-5' expand='lg' light style={{backgroundColor: props.palette.background.paper }}>
       <MDBContainer className='p-4 pb-0 text-white'>
         <section className='mb-4'>
-
           <MDBBtn color={BUTTONCOLOR} style={{ backgroundColor: '#dd4b39' }} floating className='m-1' href='#!' role='button'>
-            <MDBIcon fab icon='google' />
+            <MDBIcon fas icon="envelope" />
           </MDBBtn>
 
           <MDBBtn color={BUTTONCOLOR} style={{ backgroundColor: '#0082ca' }} floating className='m-1' href='#!' role='button'>

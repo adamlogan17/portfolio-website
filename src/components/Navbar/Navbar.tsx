@@ -24,7 +24,7 @@ export default function Navbar({props}:any) {
   
   return (
     <>
-      <MDBNavbar expand='lg' light style={{ backgroundColor: props.palette.background.default }}>
+      <MDBNavbar expand='lg' light style={{ backgroundColor: props.palette.background.paper }}>
         <MDBContainer fluid>
           <MDBNavbarBrand style={style} href='#'>Adam Logan's Portfolio</MDBNavbarBrand>
           

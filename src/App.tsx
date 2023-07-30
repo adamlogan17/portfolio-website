@@ -79,17 +79,23 @@ function App() {
         <ThemeProvider theme={createTheme(theme)}>
           <CssBaseline />
           <div id="wrapper">
-          <Navbar props={{toggleMode: colorMode.toggleColorMode, mode:mode, palette: mode === 'light' ? lightThemePalette : darkThemePalette}} />
+            <Navbar props={{toggleMode: colorMode.toggleColorMode, mode:mode, palette: mode === 'light' ? lightThemePalette : darkThemePalette}} />
 
-          <div id='page-wrapper'>
-            <Intro />
+            <div id='page-wrapper'>
+              <div className='section'>
+                <Intro />
+              </div>
 
-            <About />
+              <div className='section' id='about'>
+                <About />
+              </div>
 
-            <Projects />
-          </div>
+              <div className='section' id='projects'>
+                <Projects />
+              </div>
+            </div>
 
-          <Footer props={{toggleMode: colorMode.toggleColorMode, mode:mode, palette: mode === 'light' ? lightThemePalette : darkThemePalette}} />
+            <Footer props={{toggleMode: colorMode.toggleColorMode, mode:mode, palette: mode === 'light' ? lightThemePalette : darkThemePalette}} />
           </div>
         </ThemeProvider>
       </ColorModeContext.Provider>

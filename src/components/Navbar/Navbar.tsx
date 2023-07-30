@@ -26,7 +26,13 @@ export default function Navbar({props}:any) {
   }
   
   return (
-    <Paper sx={{borderRadius: '0px'}}>
+    <Paper sx={{
+        borderRadius: '0px', 
+        position:'fixed',
+        top: '0%',
+        width:'100%',
+        zIndex: '1',
+      }}>
       <MDBNavbar expand='lg'>
         <MDBContainer fluid id='page-wrapper'>
           <MDBNavbarBrand style={style} >
@@ -40,8 +46,6 @@ export default function Navbar({props}:any) {
             <MDBIcon icon='bars' fas />
           </MDBNavbarToggler>
 
-          
-
           <MDBCollapse show={showNav} navbar >
             <MDBNavbarNav className='me-auto mb-2 mb-lg-0' style={{justifyContent:'right'}}>
 
@@ -50,7 +54,7 @@ export default function Navbar({props}:any) {
               </MDBNavbarItem>
 
               <MDBNavbarItem>
-                <MDBNavbarLink style={style} href='#'>Projects</MDBNavbarLink>
+                <MDBNavbarLink style={style} href='#projects'>Projects</MDBNavbarLink>
               </MDBNavbarItem>
 
               <MDBNavbarItem>

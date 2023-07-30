@@ -1,5 +1,11 @@
-#tech-skills {
+.tech-skills {
   display: block;
   margin: auto;
-  width: 60%;
+  width: 70%;
+}
+
+@media screen and (max-width: 1150px) {  
+  .tech-skills {
+    width:100%
+  }
 }

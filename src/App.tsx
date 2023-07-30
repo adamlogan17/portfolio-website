@@ -22,7 +22,7 @@ const lightThemePalette = {
   },
   background: {
     default:'#e3f2fd',
-    paper: '#313552'
+    paper: '#b8c4cc'
   }
 }
 

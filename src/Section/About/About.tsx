@@ -1,6 +1,7 @@
 import { Paper } from "@mui/material";
 import CurrentTechSkills from '../../assets/images/currentTechSkills.png';
-import './About.css'
+import './About.css';
+import '../../layout.css';
 import DownloadList from "../../components/DownloadList/DownloadList";
 
 import Vantiq from '../../assets/images/vantiqSquareLogo.jpeg';
@@ -102,7 +103,10 @@ const qualifications:any[] = [
 export default function About() {
   
   return (
-    <Paper className='row'>
+    <Paper className='row' sx={{
+      borderRadius: '100px',
+      padding: '10px'
+    }}>
       <h3>
         About Me
       </h3>
@@ -143,13 +147,13 @@ export default function About() {
         Technical Skills
       </h1>
 
-      <figure>
-          <img id="tech-skills" src={CurrentTechSkills} alt="Tech Skills Logos"/>
+      <figure >
+          <img className="tech-skills" src={CurrentTechSkills} alt="Tech Skills Logos"/>
       </figure>
 
       <h1>Qualifications</h1>
       
-      <div style={{width:'60%'}}>
+      <div className="tech-skills">
         <DownloadList items={qualifications}/>
       </div>
 

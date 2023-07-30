@@ -33,6 +33,7 @@
 @media screen and (min-width: 1525px) {
   #page-wrapper {
     /* Needs to be 90% of the min width to prevent jarring transition when changing screen size*/
-    width: calc(1525 * 0.9);
+    width: calc(1525px * 0.9);
+    /* width: 1525px; */
   }
 }

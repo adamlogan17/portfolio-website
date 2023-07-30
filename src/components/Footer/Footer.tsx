@@ -23,16 +23,20 @@ export default function Footer({props}:any) {
     <MDBFooter className='text-center shadow-5' expand='lg'>
       <MDBContainer className='p-4 pb-0 text-white'>
         <section className='mb-4'>
-          <MDBBtn color={BUTTONCOLOR} style={{ backgroundColor: '#dd4b39' }} floating className='m-1' href='#!' role='button'>
+          <MDBBtn color={BUTTONCOLOR} style={{ backgroundColor: '#dd4b39' }} floating className='m-1' href='mailto:adamlogan42@gmail.com' role='button'>
             <MDBIcon fas icon="envelope" />
           </MDBBtn>
 
-          <MDBBtn color={BUTTONCOLOR} style={{ backgroundColor: '#0082ca' }} floating className='m-1' href='#!' role='button'>
+          <MDBBtn color={BUTTONCOLOR} style={{ backgroundColor: '#0082ca' }} floating className='m-1' href='https://www.linkedin.com/in/adamlogan42' role='button'>
             <MDBIcon fab icon='linkedin-in' />
           </MDBBtn>
 
-          <MDBBtn color={BUTTONCOLOR} style={{ backgroundColor: '#333333' }} floating className='m-1' href='#!' role='button'>
+          <MDBBtn color={BUTTONCOLOR} style={{ backgroundColor: '#333333' }} floating className='m-1' href='https://github.com/adamlogan17' role='button'>
             <MDBIcon fab icon='github' />
+          </MDBBtn>
+
+          <MDBBtn color={BUTTONCOLOR} style={{ backgroundColor: '#00A4EF' }} floating className='m-1' href='https://learn.microsoft.com/en-gb/users/adamlogan42' role='button'>
+            <MDBIcon fab icon="microsoft" />
           </MDBBtn>
         </section>
       </MDBContainer>

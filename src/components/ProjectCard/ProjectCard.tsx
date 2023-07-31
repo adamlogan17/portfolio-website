@@ -6,7 +6,7 @@ import { CardActionArea } from '@mui/material';
 
 export default function ProjectCard(props:{title:string, img:any, text:string, projectUrl: string}) {
   return (
-    <Card sx={{ width: '350px', height: '500px', padding:'0px', margin:'10px' }}>
+    <Card sx={{ width: '300px', height: '490px', padding:'0px', margin:'10px' }}>
       <CardActionArea href={props.projectUrl} target="_blank" sx={{
           textDecoration:'none', 
           height:'inherit',
@@ -15,7 +15,7 @@ export default function ProjectCard(props:{title:string, img:any, text:string, p
           }}}>
         <CardMedia
           component="img"
-          height="350px"
+          height="300px"
           image={props.img.src}
           alt={props.img.alt}
         />

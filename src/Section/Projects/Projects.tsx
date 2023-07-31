@@ -4,7 +4,7 @@ import ProjectCard from '../../components/ProjectCard/ProjectCard';
 
 import AzureLogo from '../../assets/images/azureNoNameLogo.png';
 import PythonLogo from '../../assets/images/pythonLogo2.png';
-import JavaLogo from '../../assets/images/JavaLogo2.png';
+import JavaLogo from '../../assets/images/javaLogo2.png';
 import WebTech from '../../assets/images/webTech.png';
 
 const pythonLogoDetails = {

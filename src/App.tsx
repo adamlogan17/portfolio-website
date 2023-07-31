@@ -28,24 +28,24 @@ const lightThemePalette = {
 }
 
 const darkThemePalette = {
-    primary: {
-      main: '#ffffff'
-    },
-    text: {
-      primary:'#ffffff'
-    },
-    background: {
-      // #1f2235
-      // #0a4275
-      default:'#1f2235',
-      paper: '#313552'
-    }
+  primary: {
+    main: '#ffffff'
+  },
+  text: {
+    primary:'#ffffff'
+  },
+  background: {
+    // #1f2235
+    // #0a4275
+    default:'#1f2235',
+    paper: '#313552'
+  }
 }
 const getDesignTokens = (mode: PaletteMode) => ({
   palette: {
     mode,
     ...(mode === 'light' ? lightThemePalette : darkThemePalette),
-  },
+  }
 });
 
 /**

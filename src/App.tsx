@@ -9,6 +9,7 @@ import Footer from './components/Footer/Footer';
 import Intro from './Section/Intro/Intro';
 import About from './Section/About/About';
 import Projects from './Section/Projects/Projects';
+import PageProgress from './components/PageProgress/PageProgress';
 
 // link and button color is set by primary.main
 const lightThemePalette = {
@@ -29,7 +30,7 @@ const lightThemePalette = {
 
 const darkThemePalette = {
   primary: {
-    main: '#ffffff'
+    main: '#368af6'
   },
   text: {
     primary:'#ffffff'
@@ -79,6 +80,9 @@ function App() {
         <ThemeProvider theme={createTheme(theme)}>
           <CssBaseline />
           <div id="wrapper">
+
+            <PageProgress backgroundColor={mode === 'light' ? lightThemePalette.primary.main : darkThemePalette.primary.main} />
+
             <Navbar props={{toggleMode: colorMode.toggleColorMode, mode:mode, palette: mode === 'light' ? lightThemePalette : darkThemePalette}} />
 
             <div id='page-wrapper'>

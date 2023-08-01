@@ -1,5 +1,8 @@
 - [portfolio-website](#portfolio-website)
   - [How do I get started?](#how-do-i-get-started)
+  - [Libraries](#libraries)
+    - [Libraries Used](#libraries-used)
+    - [Potential Libraries](#potential-libraries)
   - [TODOS](#todos)
 
 # portfolio-website
@@ -12,9 +15,20 @@ Within this website you can learn about myself, my work experience and about my 
 
 You can visit the website [here](https://adam-logan-portfolio.netlify.app/) or you can clone this repository and open the ```index.html``` file
 
+## Libraries
+
+### Libraries Used
+
+- [framer-motion](https://react-awesome-reveal.morello.dev/docs/getting-started)
+
+### Potential Libraries
+
+- [react-awesome-reveal](https://react-awesome-reveal.morello.dev/docs/getting-started)
+
 ## TODOS
 
-- Test deployment using [this]<https://medium.com/@achillesmoraites/serve-a-react-app-with-express-server-c5986769bac> or ```npm run preview```
+- Copy some animations from [this](https://codesandbox.io/s/framer-motion-image-reveal-effect-blinds-4ed4vg?from-embed=&file=/src/App.tsx)
+- Test deployment using [this](https://medium.com/@achillesmoraites/serve-a-react-app-with-express-server-c5986769bac) or ```npm run preview```
 - Maybe move the assets folder into the public folder, read more [here](https://vitejs.dev/guide/assets.html) and [here](https://www.reddit.com/r/webdev/comments/z6dsoh/can_someone_explain_to_me_what_the_public_folder/)
 - Add a transition when changing theme
   - Maybe just add a '*' tag and put the transition in there and import the css file in all components and see if that works

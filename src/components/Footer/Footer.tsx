@@ -38,6 +38,13 @@ export default function Footer({props}:any) {
           <MDBBtn color={BUTTONCOLOR} style={{ backgroundColor: '#00A4EF' }} floating className='m-1' href='https://learn.microsoft.com/en-gb/users/adamlogan42' role='button'>
             <MDBIcon fab icon="microsoft" />
           </MDBBtn>
+
+          <MDBBtn color={BUTTONCOLOR} style={{ backgroundColor: '#00645A' }} floating className='m-1' href='https://learn.microsoft.com/en-gb/users/adamlogan42' role='button'>
+            <span style={{
+              fontFamily:'Pacifico',
+              margin:'auto',
+            }}>C</span>
+          </MDBBtn>
         </section>
       </MDBContainer>
 

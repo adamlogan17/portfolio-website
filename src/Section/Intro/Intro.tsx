@@ -1,6 +1,8 @@
 import { Link } from '@mui/material';
 import './Intro.css';
 import '../../layout.css';
+import { motion } from "framer-motion"
+
 import CV from '../../assets/downloads/Adam-Logan-CV.pdf';
 import ProfilePic from '../../assets/images/profile_image2.png';
 
@@ -18,7 +20,7 @@ export default function Intro() {
       
       <div  className="half-col">
         <figure>
-          <img id='profile-pic' src={ProfilePic} alt="Profile Picture of Adam Logan" />
+          <motion.img whileHover={{ scale: 1.05 }} id='profile-pic' src={ProfilePic} alt="Profile Picture of Adam Logan" />
         </figure>
       </div>
       

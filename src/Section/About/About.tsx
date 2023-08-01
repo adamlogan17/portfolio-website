@@ -2,6 +2,8 @@ import { Paper } from "@mui/material";
 import CurrentTechSkills from '../../assets/images/currentTechSkills.png';
 import './About.css';
 import '../../layout.css';
+import { motion } from "framer-motion"
+
 import DownloadList from "../../components/DownloadList/DownloadList";
 
 import Vantiq from '../../assets/images/vantiqSquareLogo.jpeg';
@@ -150,9 +152,9 @@ export default function About() {
         Technical Skills
       </h1>
 
-      <figure >
-          <img className="tech-skills" src={CurrentTechSkills} alt="Tech Skills Logos"/>
-      </figure>
+        <figure >   
+            <motion.img whileHover={{ scale: 1.1 }} className="tech-skills" src={CurrentTechSkills} alt="Tech Skills Logos"/>
+        </figure>
 
       <h1>Qualifications</h1>
       

@@ -1,4 +1,4 @@
-.progress-bar {
+.progress-bar-top {
   position: fixed;
   top: 0;
   left: 0;
@@ -8,10 +8,11 @@
   z-index: 2;
 }
 
-/* .progress-bar {
+.progress-bar-bottom {
   position: fixed;
-  top: 20px;
-  left: 20px;
-  transform: rotate(-90deg);
+  left: 0;
+  right: 0;
+  height: 5px;
+  bottom: 145px;
   z-index: 2;
-} */
+}

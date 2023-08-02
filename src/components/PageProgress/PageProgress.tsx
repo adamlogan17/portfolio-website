@@ -1,7 +1,7 @@
 import { motion, useScroll, useSpring } from "framer-motion";
 import './PageProgress.css';
 
-export default function PageProgress(props:{backgroundColor:string}) {
+export default function PageProgress(props:{backgroundColor:string, position:'top'|'bottom' }) {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
@@ -11,7 +11,7 @@ export default function PageProgress(props:{backgroundColor:string}) {
 
   return (
     <>
-      <motion.div className="progress-bar" style={{ scaleX, backgroundColor:props.backgroundColor }} />
+      <motion.div className={`progress-bar-${props.position}`} style={{ scaleX, backgroundColor:props.backgroundColor }} />
       <h1>hello!</h1>
     </>
   );

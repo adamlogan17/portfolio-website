@@ -81,7 +81,7 @@ function App() {
           <CssBaseline />
           <div id="wrapper">
 
-            <PageProgress backgroundColor={mode === 'light' ? lightThemePalette.primary.main : darkThemePalette.primary.main} />
+            <PageProgress position='bottom' backgroundColor={mode === 'light' ? lightThemePalette.primary.main : darkThemePalette.primary.main} />
 
             <Navbar props={{toggleMode: colorMode.toggleColorMode, mode:mode, palette: mode === 'light' ? lightThemePalette : darkThemePalette}} />
 
@@ -101,6 +101,7 @@ function App() {
 
             <Footer props={{toggleMode: colorMode.toggleColorMode, mode:mode, palette: mode === 'light' ? lightThemePalette : darkThemePalette}} />
           </div>
+
         </ThemeProvider>
       </ColorModeContext.Provider>
   )

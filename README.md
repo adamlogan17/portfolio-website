@@ -19,7 +19,7 @@ You can visit the website [here](https://adam-logan-portfolio.netlify.app/) or y
 
 ### Libraries Used
 
-- [framer-motion](https://react-awesome-reveal.morello.dev/docs/getting-started)
+- [framer-motion](https://www.framer.com/motion/)
 
 ### Potential Libraries
 
@@ -36,3 +36,4 @@ You can visit the website [here](https://adam-logan-portfolio.netlify.app/) or y
   - <https://stackoverflow.com/questions/68007041/react-materialui-theming-how-to-increase-transition-duration-when-switching-th>
   - <https://dev.to/rashidshamloo/material-ui-customization-typescript-2hba>
 - Maybe copy the colour theme from <https://medium.com/heuristics/react-dark-mode-switch-in-material-ui-dashboard-82fcf1cded66>
+- SVGs in TypeScript <https://stackoverflow.com/questions/44717164/unable-to-import-svg-files-in-typescript>

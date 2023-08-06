@@ -12,7 +12,6 @@ export default function PageProgress(props:{backgroundColor:string, position:'to
   return (
     <>
       <motion.div className={`progress-bar-${props.position}`} style={{ scaleX, backgroundColor:props.backgroundColor }} />
-      <h1>hello!</h1>
     </>
   );
 }

@@ -4,12 +4,13 @@ import { createContext, useMemo, useState } from 'react';
 
 import './App.css';
 
-import Navbar from './components/Navbar/Navbar';
+// import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import Intro from './Section/Intro/Intro';
 import About from './Section/About/About';
 import Projects from './Section/Projects/Projects';
 import PageProgress from './components/PageProgress/PageProgress';
+import { AdvancedNavBar } from './components/AdvancedNavBar/AdvancedNavBar';
 
 // link and button color is set by primary.main
 const lightThemePalette = {
@@ -79,22 +80,22 @@ function App() {
       <ColorModeContext.Provider value={colorMode}>
         <ThemeProvider theme={createTheme(theme)}>
           <CssBaseline />
+          
           <div id="wrapper">
 
             <PageProgress position='bottom' backgroundColor={mode === 'light' ? lightThemePalette.primary.main : darkThemePalette.primary.main} />
 
-            <Navbar props={{toggleMode: colorMode.toggleColorMode, mode:mode, palette: mode === 'light' ? lightThemePalette : darkThemePalette}} />
+            <AdvancedNavBar />
+            {/* <Navbar props={{toggleMode: colorMode.toggleColorMode, mode:mode, palette: mode === 'light' ? lightThemePalette : darkThemePalette}} /> */}
 
             <div id='page-wrapper'>
-              <div className='section'>
-                <Intro />
-              </div>
+              <Intro />
 
-              <div className='section' id='about'>
+              <div id='about'>
                 <About />
               </div>
 
-              <div className='section' id='projects'>
+              <div id='projects'>
                 <Projects />
               </div>
             </div>

@@ -1,7 +1,7 @@
 import { motion, useScroll, useSpring } from "framer-motion";
 import './PageProgress.css';
 
-export default function PageProgress(props:{backgroundColor:string, position:'top'|'bottom' }) {
+export default function PageProgress(props:{backgroundColor:string, originMiddle?:boolean }) {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
@@ -11,7 +11,15 @@ export default function PageProgress(props:{backgroundColor:string, position:'to
 
   return (
     <>
-      <motion.div className={`progress-bar-${props.position}`} style={{ scaleX, backgroundColor:props.backgroundColor }} />
+      <motion.div style={{
+        scaleX,
+        backgroundColor:props.backgroundColor,
+        zIndex: '2',
+        height: '5px'
+      }} />
+
+      {/* Keeping this here as, for some reason, I can't recreate the origin left progress bar using the new method */}
+      {/* <motion.div className={`progress-bar-${props.position}`} style={{ scaleX, backgroundColor:props.backgroundColor }} /> */}
     </>
   );
 }

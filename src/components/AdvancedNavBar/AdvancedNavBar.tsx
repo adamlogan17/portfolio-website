@@ -5,6 +5,10 @@ import './AdvancedNavBar.css';
 import { MenuItem } from "./MenuItem";
 import { Paper } from "@mui/material";
 
+import Brightness7Icon from '@mui/icons-material/Brightness7';
+import Brightness4Icon from '@mui/icons-material/Brightness4';
+import IconButton from '@mui/material/IconButton';
+
 // Defines the animations for opening and closing the sidebar
 const sidebarAnimation = {
   open: (height = 1000) => ({
@@ -46,7 +50,7 @@ const itemIds = [
   }
 ];
 
-export const AdvancedNavBar = () => {
+export const AdvancedNavBar = ({props}:any) => {
   const [isOpen, toggleOpen] = useCycle(false, true);
 
   return (
@@ -60,9 +64,12 @@ export const AdvancedNavBar = () => {
         style={{backgroundColor:'inherit'}}
       >
         
-        <NavButton toggle={() => toggleOpen()} />
+        <NavButton color={props.palette.text.primary} toggle={() => toggleOpen()} />
 
         <motion.ul variants={navItemAnimation} className="nav-list">
+          <IconButton onClick={() => props.toggleMode()} >
+            {props.mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
+          </IconButton>
           {itemIds.map((item, key) => (
             <MenuItem text={item.text} href={item.href} key={key} />
           ))}

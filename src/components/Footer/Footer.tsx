@@ -5,12 +5,13 @@ import {
   MDBIcon,
   MDBBtn
 } from 'mdb-react-ui-kit';
+import PageProgress from '../PageProgress/PageProgress';
 
 /**
  * @todo make top of footer have same effect as bottom of navbar
  * @returns 
  */
-export default function Footer({props}:any) {
+export default function Footer(props:{progress?:boolean, stick?:boolean, palette: {primary: {main:string}, text: {primary:string}}}) {
   const style = {
     color: props.palette.text.primary
   }
@@ -19,13 +20,10 @@ export default function Footer({props}:any) {
   const BUTTONCOLOR:"primary" | "link" | "white" | "light" | "none" | "secondary" | "success" | "danger" | "warning" | "dark" | "muted" | "info" | "tertiary" | undefined = 'dark';
   
   return (
-    <Paper sx={{
-      borderRadius: '0px', 
-      position:'fixed',
-      bottom: '0%',
-      width:'100%',
-      zIndex: '1'
-    }}>
+    <Paper sx={props.stick ? { position:'sticky', bottom: '0%' } : {} }>
+
+      {(props.progress) && <PageProgress backgroundColor={props.palette.primary.main} />}
+      
       <MDBFooter className='text-center shadow-5' expand='lg' >
         <MDBContainer className='p-4 pb-0 text-white' >
           <section className='mb-4'>
@@ -50,7 +48,7 @@ export default function Footer({props}:any) {
         <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
           <span style={style}>© 2023 Copyright:</span>
           <a style={style} href='/'>
-            MDBootstrap.com
+            Adam Logan
           </a>
         </div>
       </MDBFooter>

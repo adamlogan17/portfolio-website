@@ -1,6 +1,6 @@
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { CssBaseline, PaletteMode } from '@mui/material';
-import { createContext, useMemo, useState } from 'react';
+import { useMemo, useState } from 'react';
 
 import './App.css';
 
@@ -9,8 +9,7 @@ import Footer from './components/Footer/Footer';
 import Intro from './Section/Intro/Intro';
 import About from './Section/About/About';
 import Projects from './Section/Projects/Projects';
-import PageProgress from './components/PageProgress/PageProgress';
-import { AdvancedNavBar } from './components/AdvancedNavBar/AdvancedNavBar';
+import Navbar from './components/Navbar/Navbar';
 
 // link and button color is set by primary.main
 const lightThemePalette = {
@@ -60,7 +59,6 @@ function App() {
   // default light
   const [mode, setMode] = useState<'light' | 'dark'>(sessionStorage.getItem("MODE") !== 'dark' ? 'light' : 'dark');
 
-  const ColorModeContext = createContext({ toggleColorMode: () => {} });
   const theme = useMemo(() => createTheme(getDesignTokens(mode)), [mode]);
 
   const colorMode = useMemo(
@@ -68,7 +66,7 @@ function App() {
       toggleColorMode: () => {
         setMode((prevMode) => {
           const newMode = prevMode === 'light' ? 'dark' : 'light'
-          sessionStorage.setItem("MODE", newMode);
+          // sessionStorage.setItem("MODE", newMode);
           return newMode;
         });
       },
@@ -77,34 +75,30 @@ function App() {
   );
 
   return (
-      <ColorModeContext.Provider value={colorMode}>
-        <ThemeProvider theme={createTheme(theme)}>
-          <CssBaseline />
-          
-          <div id="wrapper">
+    <ThemeProvider theme={createTheme(theme)}>
+      <CssBaseline />
+      
+      <div id="wrapper">
+        <Navbar stick={true} progress={true} toggleMode={() => colorMode.toggleColorMode()} mode={mode} palette={mode === 'light' ? lightThemePalette : darkThemePalette} />
 
-            <PageProgress position='bottom' backgroundColor={mode === 'light' ? lightThemePalette.primary.main : darkThemePalette.primary.main} />
-
-            <AdvancedNavBar />
-            {/* <Navbar props={{toggleMode: colorMode.toggleColorMode, mode:mode, palette: mode === 'light' ? lightThemePalette : darkThemePalette}} /> */}
-
-            <div id='page-wrapper'>
-              <Intro />
-
-              <div id='about'>
-                <About />
-              </div>
-
-              <div id='projects'>
-                <Projects />
-              </div>
-            </div>
-
-            <Footer props={{toggleMode: colorMode.toggleColorMode, mode:mode, palette: mode === 'light' ? lightThemePalette : darkThemePalette}} />
+        <div id='page-wrapper'>
+          <div className='section'>
+            <Intro />
           </div>
 
-        </ThemeProvider>
-      </ColorModeContext.Provider>
+          <div className='section' id='about'>
+            <About />
+          </div>
+
+          <div className='section' id='projects'>
+            <Projects />
+          </div>
+        </div>
+
+        <Footer stick={false} palette = {mode === 'light' ? lightThemePalette : darkThemePalette}  />
+      </div>
+
+    </ThemeProvider>
   )
 }
 

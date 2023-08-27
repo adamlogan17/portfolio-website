@@ -6,18 +6,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 
-function padValues(arr:any[]) {
-  const maxLength = arr.reduce((max, obj) => Math.max(max, obj.value.length), 0);
-
-  return arr.map(obj => ({
-    ...obj,
-    value: obj.value.padEnd(maxLength) 
-  }));
-}
-
 export default function DisplayValueKeyPairs(props:any) {
-  const rows = padValues(props.rows);
-  console.log(rows);
   return (
     <TableContainer component={Paper}>
       <Table stickyHeader>
@@ -37,13 +26,14 @@ export default function DisplayValueKeyPairs(props:any) {
               {props.title}
             </h4>
           </TableCell>
-          {rows.map((row:any) => (
+          {props.rows.map((row:any) => (
               <TableRow
-                key={row.dataLabel}
+                key={row.key}
                 sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
               >
                 <TableCell><strong>{row.key}</strong></TableCell>
-                <TableCell align="right">{row.value}</TableCell>
+                {/* By setting the width at the minimum value, this forces 'value' to be the width of the largest value */}
+                <TableCell align="left" width="1px">{row.value}</TableCell>
               </TableRow>
           ))}
         </TableBody>

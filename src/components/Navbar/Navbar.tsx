@@ -60,11 +60,11 @@ export default function Navbar(props:{palette:any, toggleMode: () => void, mode:
                 </MDBNavbarItem>
 
                 <MDBNavbarItem>
-                  <MDBNavbarLink style={style} href='#'>Experience</MDBNavbarLink>
+                  <MDBNavbarLink style={style} href='#experience'>Experience</MDBNavbarLink>
                 </MDBNavbarItem>
                 
                 <MDBNavbarItem>
-                  <MDBNavbarLink style={style} href='#'>Education</MDBNavbarLink>
+                  <MDBNavbarLink style={style} href='#education'>Education</MDBNavbarLink>
                 </MDBNavbarItem>
               </MDBNavbarNav>
             </MDBCollapse>

@@ -11,6 +11,7 @@ import About from './Section/About/About';
 import Projects from './Section/Projects/Projects';
 import Navbar from './components/Navbar/Navbar';
 import Experience from './Section/Experience/Experience';
+import Education from './Section/Education/Education';
 
 // link and button color is set by primary.main
 const lightThemePalette = {
@@ -79,7 +80,6 @@ function App() {
     <ThemeProvider theme={createTheme(theme)}>
       <CssBaseline />
 
-
       <div id="wrapper">
         <Navbar stick={true} progress={true} toggleMode={() => colorMode.toggleColorMode()} mode={mode} palette={mode === 'light' ? lightThemePalette : darkThemePalette} />
 
@@ -98,6 +98,10 @@ function App() {
 
           <div className='section' id='experience'>
             <Experience />
+          </div>
+
+          <div className='section' id='education'>
+            <Education />
           </div>
         </div>
 

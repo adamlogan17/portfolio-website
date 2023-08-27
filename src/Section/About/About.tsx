@@ -1,8 +1,6 @@
 import { Paper } from "@mui/material";
 import CurrentTechSkills from '../../assets/images/currentTechSkills.png';
-import './About.css';
 import '../../layout.css';
-import { motion } from "framer-motion"
 
 import DownloadList from "../../components/DownloadList/DownloadList";
 
@@ -22,21 +20,22 @@ import AlteryxCert from '../../assets/downloads/Qualifications/Alterx-Designer-C
 import DofEdCert from '../../assets/downloads/Qualifications/DofEd.pdf';
 import UBELT from '../../assets/downloads/Qualifications/GCSE/CCEA/UBELT/UBELT.pdf';
 import VantiqCert from '../../assets/downloads/Qualifications/VANTIQ-Developer-Level-1.pdf';
+import CustomImage from "../../components/CustomImage/CustomImage";
 
-const microsoftAvatar:any = {
+const microsoftAvatar:Image = {
   src:Microsoft,
   alt:"Microsoft Logo",
   background:'white',
-  imgStyle: {
+  imageStyle: {
     width:'75%',
-    height:'75%',
+    height:'75%'
   }
 };
 
-const qualifications:any[] = [
+const qualifications:DownloadItem[] = [
   {
     name:'Civica Award',
-    about:'Awarded by achieving highest in the year in the module CSC2058 Systems Development',
+    description:'Awarded by achieving highest in the year in the module CSC2058 Systems Development',
     download:CivicaAward,
     avatar: {
       src:QUB,
@@ -89,7 +88,7 @@ const qualifications:any[] = [
     avatar: {
       src:CCEA,
       background:'white',
-      imgStyle: { objectFit:'contain' },
+      imageStyle: { objectFit:'contain' },
       alt:"CCEA Logo"
     }
   },
@@ -100,7 +99,7 @@ const qualifications:any[] = [
       src:DofEd,
       alt:"Duke Of Edinburgh Award Logo",
       background:'white',
-      imgStyle: { objectFit:'contain' }
+      imageStyle: { objectFit:'contain' }
     }
   }
 ]
@@ -152,9 +151,10 @@ export default function About() {
         Technical Skills
       </h1>
 
-        <figure >   
+        {/* <figure >   
             <motion.img whileHover={{ scale: 1.1 }} className="tech-skills" src={CurrentTechSkills} alt="Tech Skills Logos"/>
-        </figure>
+        </figure> */}
+        <CustomImage  src={CurrentTechSkills} alt="Tech Skills Logos" boxShadow={false} width={'70%'} />
 
       <h1>Qualifications</h1>
       

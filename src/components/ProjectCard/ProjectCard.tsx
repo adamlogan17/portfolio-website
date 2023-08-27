@@ -4,7 +4,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 
-export default function ProjectCard(props:{title:string, img:any, text:string, projectUrl: string}) {
+export default function ProjectCard(props:ProjectCard) {
   return (
     <Card sx={{ width: '300px', height: '490px', padding:'0px', margin:'10px' }}>
       <CardActionArea href={props.projectUrl} target="_blank" sx={{

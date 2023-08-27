@@ -7,17 +7,17 @@ import PythonLogo from '../../assets/images/pythonLogo2.png';
 import JavaLogo from '../../assets/images/javaLogo2.png';
 import WebTech from '../../assets/images/webTech.png';
 
-const pythonLogoDetails = {
+const pythonLogoDetails:Image = {
   src:PythonLogo,
   alt:"Python logo"
 }
 
-const javaLogoDetails = {
+const javaLogoDetails:Image = {
   src:JavaLogo,
   alt:"Java logo"
 }
 
-const projects:any[] = [
+const projects:ProjectCard[] = [
   {
     title:'Web Technology Coursework',
     text: 'This is the escape room game which I submitted for my Web Tech coursework.',
@@ -75,7 +75,7 @@ export default function Projects() {
       </div>
 
       <div className="row" >
-        {projects.map((project:any, key:number) => 
+        {projects.map((project:ProjectCard, key:number) => 
           <ProjectCard key={key} title={project.title} text={project.text} img={project.img} projectUrl={project.projectUrl} />
         )}
       </div>

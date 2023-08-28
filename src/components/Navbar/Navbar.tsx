@@ -38,7 +38,7 @@ export default function Navbar(props:{palette:any, toggleMode: () => void, mode:
         <MDBNavbar expand='lg'>
           <MDBContainer fluid id='page-wrapper'>
             <MDBNavbarBrand style={style} >
-              <MDBNavbarLink href='/'>Adam Logan's Portfolio</MDBNavbarLink>
+              <MDBNavbarLink href='#'>Adam Logan's Portfolio</MDBNavbarLink>
               <IconButton onClick={() => props.toggleMode()} >
                 {props.mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
               </IconButton>
@@ -49,22 +49,21 @@ export default function Navbar(props:{palette:any, toggleMode: () => void, mode:
             </MDBNavbarToggler>
 
             <MDBCollapse show={showNav} navbar >
-              <MDBNavbarNav className='me-auto mb-2 mb-lg-0' style={{justifyContent:'right'}}>
-
+              <MDBNavbarNav className='me-auto mb-2 mb-lg-0' style={{ justifyContent:'right' }}>
                 <MDBNavbarItem>
-                  <MDBNavbarLink style={style} href='#about'>About</MDBNavbarLink>
+                  <MDBNavbarLink style={style} href='#about' onClick={() => setShowNav(!showNav)}>About</MDBNavbarLink>
                 </MDBNavbarItem>
 
                 <MDBNavbarItem>
-                  <MDBNavbarLink style={style} href='#projects'>Projects</MDBNavbarLink>
+                  <MDBNavbarLink style={style} href='#projects' onClick={() => setShowNav(!showNav)}>Projects</MDBNavbarLink>
                 </MDBNavbarItem>
 
                 <MDBNavbarItem>
-                  <MDBNavbarLink style={style} href='#experience'>Experience</MDBNavbarLink>
+                  <MDBNavbarLink style={style} href='#experience' onClick={() => setShowNav(!showNav)}>Experience</MDBNavbarLink>
                 </MDBNavbarItem>
                 
                 <MDBNavbarItem>
-                  <MDBNavbarLink style={style} href='#education'>Education</MDBNavbarLink>
+                  <MDBNavbarLink style={style} href='#education'  onClick={() => setShowNav(!showNav)}>Education</MDBNavbarLink>
                 </MDBNavbarItem>
               </MDBNavbarNav>
             </MDBCollapse>

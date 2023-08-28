@@ -16,7 +16,7 @@ import CivicaAward from '../../assets/downloads/Qualifications/Civica-Award.pdf'
 import AI900 from '../../assets/downloads/Qualifications/Microsoft-AI-Fundamentals-Certificate.pdf';
 import AZ900 from '../../assets/downloads/Qualifications/Microsoft-Azure-Fundamentals-Certificate.pdf';
 import SC900 from '../../assets/downloads/Qualifications/Microsoft-Security-Fundamentals-Certificate.pdf';
-import AlteryxCert from '../../assets/downloads/Qualifications/Alterx-Designer-Core-Certification.pdf';
+import AlteryxCert from '../../assets/downloads/Qualifications/Alteryx-Designer-Core-Certification.pdf';
 import DofEdCert from '../../assets/downloads/Qualifications/DofEd.pdf';
 import UBELT from '../../assets/downloads/Qualifications/GCSE/CCEA/UBELT/UBELT.pdf';
 import VantiqCert from '../../assets/downloads/Qualifications/VANTIQ-Developer-Level-1.pdf';
@@ -108,8 +108,10 @@ export default function About() {
   
   return (
     <Paper className='row' sx={{
-      borderRadius: '100px',
-      padding: '10px'
+      borderRadius: '50px',
+      padding: '10px',
+      paddingTop: '25px',
+      paddingBottom: '25px'
     }}>
       <h3>
         About Me
@@ -151,16 +153,11 @@ export default function About() {
         Technical Skills
       </h1>
 
-        {/* <figure >   
-            <motion.img whileHover={{ scale: 1.1 }} className="tech-skills" src={CurrentTechSkills} alt="Tech Skills Logos"/>
-        </figure> */}
-        <CustomImage  src={CurrentTechSkills} alt="Tech Skills Logos" boxShadow={false} width={'70%'} />
+        <CustomImage  src={CurrentTechSkills} alt="Tech Skills Logos" boxShadow={false} width="70%" />
 
       <h1>Qualifications</h1>
       
-      <div className="tech-skills">
-        <DownloadList items={qualifications}/>
-      </div>
+      <DownloadList items={qualifications}/>
 
     </Paper>
   );

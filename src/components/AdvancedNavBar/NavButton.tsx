@@ -3,7 +3,6 @@ import { SVGMotionProps, motion } from "framer-motion";
 import { JSX } from "react/jsx-runtime";
 import './NavButton.css';
 
-// Defines the 
 const Path = (props: JSX.IntrinsicAttributes & SVGMotionProps<SVGPathElement> & React.RefAttributes<SVGPathElement>) => (
   <motion.path
     strokeWidth="3"

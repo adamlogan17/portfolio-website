@@ -4,7 +4,6 @@ import { useMemo, useState } from 'react';
 
 import './App.css';
 
-// import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import Intro from './Section/Intro/Intro';
 import About from './Section/About/About';

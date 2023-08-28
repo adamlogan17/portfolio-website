@@ -33,5 +33,14 @@ type Institution = {
   title:string,
   dateRange:string,
   logo:Image,
+  description?:Role,
   role:Role[]
+}
+
+type KeyValuePair = {
+  title?:string,
+  data:{
+    key:string,
+    value:string
+  }[]
 }

@@ -8,6 +8,7 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 export default function ShowInstitution(props:Institution) {
+  console.log(props);
   return (
     <div className="row">
       <div className="half-col">
@@ -21,6 +22,12 @@ export default function ShowInstitution(props:Institution) {
       </div>
 
       <div className="half-col">
+        <h4>
+          {props.description?.roleName}
+        </h4>
+        <p>
+          {props.description?.description}                                 
+        </p>
         {
           props.role.length > 1 ? 
           (

@@ -5,9 +5,9 @@ import '../../layout.css';
 import qubLogo from '../../assets/images/qubLogo.jpg';
 import belfastHighLogo from '../../assets/images/bhsLogo2.png';
 
-const qubLevel1 = {
+const qubLevel1:KeyValuePair = {
   title: "Level 1",
-  rows: [ 
+  data: [ 
     {
       key:"Fundamentals of Maths for Computing",
       value:"91"
@@ -35,9 +35,9 @@ const qubLevel1 = {
   ]
 }
 
-const qubLevel2 = {
+const qubLevel2:KeyValuePair = {
   title: "Level 2",
-  rows: [ 
+  data: [ 
     {
       key:"Professional and Transferable Skills",
       value:"86",
@@ -61,9 +61,9 @@ const qubLevel2 = {
   ]
 }
 
-const qubLevel3 = {
+const qubLevel3:KeyValuePair = {
   title: "Level 3",
-  rows: [ 
+  data: [ 
     {
       key:"Malware Analysis",
       value:"84",
@@ -79,9 +79,9 @@ const qubLevel3 = {
   ]
 }
 
-const aLevels = {
+const aLevels:KeyValuePair = {
   title: "A-Levels",
-  rows: [ 
+  data: [ 
     {
       key:"Computer Science	",
       value:"A*",
@@ -97,9 +97,9 @@ const aLevels = {
   ]
 }
 
-const gcses = {
+const gcses:KeyValuePair = {
   title: "GCSEs",
-  rows: [ 
+  data: [ 
     {
       key:"Computer Science",
       value:"A*",
@@ -151,9 +151,8 @@ const educationDetails:Institution[] = [
       alt:"QUB Logo"
     },
     dateRange: "Sept 2020 - Current",
-    role: [
-      {
-        roleName:"BEng Software Engineering",
+    description: {
+      roleName:"BEng Software Engineering",
         description: 
           <>
             At queen's I have learnt about many principles and concepts 
@@ -165,15 +164,30 @@ const educationDetails:Institution[] = [
             documentation and the design phase. To this end within almost 
             every module I learnt about the nuances of the Unified 
             Modelling Language (UML).
-            <br/>
-            <br/>
-            <DisplayValueKeyPairs rows={qubLevel1.rows} title={qubLevel1.title} />
-            <br/>
-            <DisplayValueKeyPairs rows={qubLevel2.rows} title={qubLevel2.title} />
-            <br/>
-            <DisplayValueKeyPairs rows={qubLevel3.rows} title={qubLevel3.title} />
           </>
-      }
+    },
+    role: [
+      {
+        roleName:qubLevel1.title === undefined ? "" : qubLevel1.title,
+        description:
+          <>
+            <DisplayValueKeyPairs data={qubLevel1.data} />
+          </>
+      },
+      {
+        roleName:qubLevel2.title === undefined ? "" : qubLevel2.title,
+        description:
+          <>
+            <DisplayValueKeyPairs data={qubLevel2.data} />
+          </>
+      },
+      {
+        roleName:qubLevel3.title === undefined ? "" : qubLevel3.title,
+        description:
+          <>
+            <DisplayValueKeyPairs data={qubLevel3.data} />
+          </>
+      },
     ]
   },
   {
@@ -183,30 +197,36 @@ const educationDetails:Institution[] = [
       alt:"Belfast High School Logo"
     },
     dateRange: "Sept 2013 - Jul 2020",
+    description: {
+      roleName:"A-Level and GCSE",
+      description: 
+        <>
+          During my time at Belfast High School I built a range of skills and abilities 
+          through of my experiences. I was a Computing prefect and in this role I went to junior school 
+          computing classes and assisted these students in their practical work. I also 
+          created the rota for this programme, for the assistant prefects, alongside the senior 
+          prefect. This helped me to develop my leadership and organisational skills.
+        </>
+    },
     role: [
       {
-        roleName:"A-Level and GCSE",
-        description: 
+        roleName:aLevels.title === undefined ? "" : aLevels.title,
+        description:
           <>
-            During my time at Belfast High School I built a range of skills and abilities 
-            through of my experiences. I was a Computing prefect and in this role I went to junior school 
-            computing classes and assisted these students in their practical work. I also 
-            created the rota for this programme, for the assistant prefects, alongside the senior 
-            prefect. This helped me to develop my leadership and organisational skills. 
-            <br/>
-            <br/>
-            <DisplayValueKeyPairs rows={aLevels.rows} title={aLevels.title} />
-            <br/>
-            <DisplayValueKeyPairs rows={gcses.rows} title={gcses.title} />
+            <DisplayValueKeyPairs data={aLevels.data} />
+          </>
+      },
+      {
+        roleName:gcses.title === undefined ? "" : gcses.title,
+        description:
+          <>
+            <DisplayValueKeyPairs data={gcses.data} />
           </>
       }
     ]
   }
 ]
 
-/**
- * TODO Maybe change the grades to an accordion
- */
 export default function Education() {
   return (
     <>
@@ -216,7 +236,15 @@ export default function Education() {
         </h3>
       </div>
 
-      {educationDetails.map((experience:any, key:number) => <ShowInstitution key={key} logo={experience.logo} title={experience.title} dateRange={experience.dateRange} role={experience.role} />)}
+      {educationDetails.map((experience:any, key:number) => 
+        <ShowInstitution 
+          key={key} 
+          logo={experience.logo} 
+          title={experience.title} 
+          dateRange={experience.dateRange} 
+          role={experience.role} 
+          description={experience.description}
+        />)}
     </>
   );
 }

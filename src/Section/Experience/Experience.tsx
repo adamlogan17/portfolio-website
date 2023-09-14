@@ -17,6 +17,43 @@ const experienceDetails:Institution[] = [
     },
     role:[
       {
+        roleName:"Form Builder",
+        dateRange: "Jun 2023 - Jul 2023", // (05/06/2023 -  28/07/2023)
+        description:
+        <>
+          <p>
+            I took over a project that facilitated company service registrations and managed payments between customers 
+            and these companies. However, this project came with no existing documentation. My initial responsibility was 
+            to <i>generate comprehensive documentation</i> for the current platform.  I meticulously crafted <i>README</i> files 
+            for both frontend and backend components, elevated the clarity of code through <i>enhanced comments</i>, 
+            launched a <i>Jsdoc</i> site that encapsulated details of every frontend function, and designed an onboarding 
+            guide to aid future developers.
+          </p>
+
+          <p>
+            I engineered a form builder allowing users to integrate various elements, such as text fields, buttons, 
+            text descriptions, and radio buttons. These elements were presented in a list format, the order of which 
+            could be dynamically altered using a custom drag-and-drop feature. Additionally, the properties associated 
+            with each component were made editable, offering a more flexible and user-centric design approach.
+          </p>
+          
+          <p>
+            As a part of this project, I deepened my expertise in <i>React</i>, <i>Flask</i>, and <i>MySQL</i>.          
+          </p>
+        </>
+      },
+      {
+        roleName:"Azure Functions",
+        dateRange: "Aug 2023 - Sept 2023", // (31/07/2023 -  15/09/2023)
+        description:
+          <>
+            In this project, I worked within the integration team. My role centered on handling user stories related to importing 
+            and transforming the JSON data, into a relational format, from various DfE endpoints and establishing and verifying 
+            unique identifiers in an external data repository. To accomplish this, I developed <i>Azure functions</i> in <i>C#</i>, 
+            interfaced with several endpoints, and managed data in both a <i>Microsoft SQL</i> database and <i>Dataverse</i>.
+          </>
+      },
+      {
         roleName:"AppScript",
         dateRange: "Nov 2022 - Dec 2022", // (21/11/2022 -  30/12/2022)
         description:
@@ -90,14 +127,7 @@ const experienceDetails:Institution[] = [
         dateRange: "Jun 2021 - Aug 2021", // (14/06/2021 - 16/08/2021)
         description:
           <>
-            <p>
-              Within the first half of my first 
-              placement, I was trained on several technologies such as <i>Azure</i>,
-              <i>Alteryx</i>, <i>UiPath</i> and <i>excel</i>.
-            </p>
-
-            <p>
-              The second half of my placement I was placed within the configuration
+              I was placed within the configuration
               team of a project which consisted of creating an online loan
               application process. Within this project I worked with <i>salesforce</i>, and
               more specifically <i>salesforce flows</i>, to make changes to the application
@@ -105,7 +135,6 @@ const experienceDetails:Institution[] = [
               and onboarding for a large project team (50+ colleagues), spanning
               two continents (PwC UK, CTech Poland and PwC South Africa) which
               demonstrates that my <i>ability to work within a multicultural team</i>.
-            </p>
           </> 
       }
     ]

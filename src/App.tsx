@@ -36,22 +36,34 @@ const darkThemePalette = {
   text: {
     primary:'#ffffff'
   },
-  background: {
-    // #1f2235
-    // #0a4275
-    default:'#1f2235',
-    paper: '#313552'
-  }
+  // background: {
+  //   // #1f2235
+  //   // #0a4275
+  //   default:'#1f2235',
+  //   paper: '#313552'
+  // }
 }
 const getDesignTokens = (mode: PaletteMode) => ({
   palette: {
     mode,
     ...(mode === 'light' ? lightThemePalette : darkThemePalette),
+  },
+  overrides: {
+    MuiCssBaseline: {
+      "@global": {
+        body: {
+          backgroundImage:
+            "url(https://designshack.net/wp-content/uploads/gradient-background.jpg)"
+        }
+      }
+    }
   }
 });
 
 /**
- * @todo maybe use the dark blue colour on mdb footer instead of the original colour scheme
+ * @todo look at https://www.freecodecamp.org/news/animate-react-apps/ for animation
+ * @todo add this https://marcbruederlin.github.io/particles.js/ for bg
+ * @todo add img as bg https://stackoverflow.com/questions/55576512/setting-a-body-background-image-in-muithemeprovider
  */
 function App() {
   // default dark

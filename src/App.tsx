@@ -36,12 +36,12 @@ const darkThemePalette = {
   text: {
     primary:'#ffffff'
   },
-  // background: {
-  //   // #1f2235
-  //   // #0a4275
-  //   default:'#1f2235',
-  //   paper: '#313552'
-  // }
+  background: {
+    // #1f2235
+    // #0a4275
+    default:'#1f2235',
+    paper: '#313552'
+  }
 }
 const getDesignTokens = (mode: PaletteMode) => ({
   palette: {

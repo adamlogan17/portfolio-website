@@ -117,7 +117,7 @@ export default function About() {
         About Me
       </Typography>
 
-      <Typography variant="h1">
+      <Typography variant="h4">
         A little bit about me
       </Typography>
 
@@ -149,13 +149,13 @@ export default function About() {
         paramedic to a specialist.
       </p>
 
-      <Typography variant="h1">
+      <Typography variant="h4">
         Technical Skills
       </Typography>
 
         <CustomImage  src={CurrentTechSkills} alt="Tech Skills Logos" boxShadow={false} width="70%" />
 
-      <Typography variant="h1">
+      <Typography variant="h4">
         Qualifications
       </Typography>
       

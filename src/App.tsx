@@ -14,38 +14,72 @@ import Education from './Section/Education/Education';
 
 // link and button color is set by primary.main
 // it is also important to note that the only 'offical' attributes of 'text' are primary, secondary and disabled, the other attributes are custom and are used in the typography section, in getDesignTokens
+
+// 379683
 const lightThemePalette = {
   primary: {
-    main:'#000000'
+    main: '#05386B'
   },
   secondary: {
-    main: '#313552'
+    main: '#14A098'
   },
   text: {
-    primary:'#000000',
-    h1:'#ff0000',
+    primary:'#EDF5E1'
   },
   background: {
-    default:'#e3f2fd',
-    paper: '#b8c4cc'
+    default:'#5CDB95',
+    paper: '#379683'
   }
-}
+};
+// const lightThemePalette = {
+//   primary: {
+//     main:'#000000'
+//   },
+//   secondary: {
+//     main: '#313552'
+//   },
+//   text: {
+//     primary:'#000000'
+//   },
+//   background: {
+//     default:'#e3f2fd',
+//     paper: '#b8c4cc'
+//   }
+// }
 
+// const darkThemePalette = {
+//   primary: {
+//     main: '#368af6'
+//   },
+//   text: {
+//     primary:'#ffffff',
+//     h2:'#368af6',
+//   },
+//   background: {
+//     // #1f2235
+//     // #0a4275
+//     default:'#1f2235',
+//     paper: '#313552'
+//   }
+// }
+
+// 501F3A
 const darkThemePalette = {
   primary: {
-    main: '#368af6'
+    main: '#CB2D6F'
+  },
+  secondary: {
+    main: '#14A098'
   },
   text: {
-    primary:'#ffffff',
-    h2:'#368af6',
+    primary:'#CCCCCC'
   },
   background: {
-    // #1f2235
-    // #0a4275
-    default:'#1f2235',
-    paper: '#313552'
+    default:'#0F292F',
+    paper: '#0F292F'
   }
-}
+};
+
 const getDesignTokens = (mode: PaletteMode) => ({
   palette: {
     mode,
@@ -58,8 +92,11 @@ const getDesignTokens = (mode: PaletteMode) => ({
           color: ${themeParam.palette.text.h1};
         },
         h2 {
-          color: ${themeParam.palette.text.h2};
-        }
+          color: ${themeParam.palette.primary.main};
+        },
+        h4 {
+          color: ${themeParam.palette.text.h4};
+        },
       `,
     }
   },
@@ -85,6 +122,7 @@ const getDesignTokens = (mode: PaletteMode) => ({
 /**
  * @todo look at https://www.freecodecamp.org/news/animate-react-apps/ for animation
  * @todo add this https://marcbruederlin.github.io/particles.js/ for bg
+ * @todo pick a colour theme for the site https://visme.co/blog/website-color-schemes/
  */
 function App() {
   // default dark

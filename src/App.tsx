@@ -13,6 +13,7 @@ import Experience from './Section/Experience/Experience';
 import Education from './Section/Education/Education';
 
 // link and button color is set by primary.main
+// it is also important to note that the only 'offical' attributes of 'text' are primary, secondary and disabled, the other attributes are custom and are used in the typography section, in getDesignTokens
 const lightThemePalette = {
   primary: {
     main:'#000000'
@@ -21,7 +22,8 @@ const lightThemePalette = {
     main: '#313552'
   },
   text: {
-    primary:'#000000'
+    primary:'#000000',
+    h1:'#ff0000',
   },
   background: {
     default:'#e3f2fd',
@@ -34,7 +36,8 @@ const darkThemePalette = {
     main: '#368af6'
   },
   text: {
-    primary:'#ffffff'
+    primary:'#ffffff',
+    h2:'#368af6',
   },
   background: {
     // #1f2235
@@ -48,14 +51,33 @@ const getDesignTokens = (mode: PaletteMode) => ({
     mode,
     ...(mode === 'light' ? lightThemePalette : darkThemePalette),
   },
-  overrides: {
+  components: {
     MuiCssBaseline: {
-      "@global": {
-        body: {
-          backgroundImage:
-            "url(https://designshack.net/wp-content/uploads/gradient-background.jpg)"
+      styleOverrides: (themeParam:any) => `
+        h1 {
+          color: ${themeParam.palette.text.h1};
+        },
+        h2 {
+          color: ${themeParam.palette.text.h2};
         }
-      }
+      `,
+    }
+  },
+  typography: {
+    h1: {
+      fontWeight: 500,
+      fontSize: '2.5rem'
+    },
+    h2: {
+      fontWeight: 3500,
+      fontSize: '2rem'
+    },
+    h3: {
+      fontWeight: 500,
+      fontSize: '1.75rem'
+    },
+    h4: {
+      fontSize: '2rem'
     }
   }
 });
@@ -63,7 +85,6 @@ const getDesignTokens = (mode: PaletteMode) => ({
 /**
  * @todo look at https://www.freecodecamp.org/news/animate-react-apps/ for animation
  * @todo add this https://marcbruederlin.github.io/particles.js/ for bg
- * @todo add img as bg https://stackoverflow.com/questions/55576512/setting-a-body-background-image-in-muithemeprovider
  */
 function App() {
   // default dark
@@ -91,7 +112,7 @@ function App() {
     <ThemeProvider theme={createTheme(theme)}>
       <CssBaseline />
 
-      <div id="wrapper">
+      <div id="wrapper">        
         <Navbar stick={true} progress={true} toggleMode={() => colorMode.toggleColorMode()} mode={mode} palette={mode === 'light' ? lightThemePalette : darkThemePalette} />
 
         <div id='page-wrapper'>

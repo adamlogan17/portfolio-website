@@ -1,4 +1,4 @@
-import { Link } from '@mui/material';
+import { Link, Typography } from '@mui/material';
 import '../../layout.css';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 
@@ -66,9 +66,9 @@ export default function Projects() {
   return (
     <>
       <div className="row">
-        <h3>
+        <Typography variant='h2' gutterBottom>
             Projects
-        </h3>
+        </Typography>
 
         <p>Please read 'README.txt' for all the projects</p>
         <p>You can also view all these project, projects I am currently working, and more on my <Link target="_blank" href="https://github.com/adamlogan17">GitHub</Link> profile!</p>

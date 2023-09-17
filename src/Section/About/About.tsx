@@ -1,4 +1,4 @@
-import { Paper } from "@mui/material";
+import { Paper, Typography } from "@mui/material";
 import CurrentTechSkills from '../../assets/images/currentTechSkills.png';
 import '../../layout.css';
 
@@ -113,13 +113,13 @@ export default function About() {
       paddingTop: '25px',
       paddingBottom: '25px'
     }}>
-      <h3>
+      <Typography variant="h2">
         About Me
-      </h3>
+      </Typography>
 
-      <h1>
+      <Typography variant="h1">
         A little bit about me
-      </h1>
+      </Typography>
 
       <p>
         I am currently studying Software
@@ -149,13 +149,15 @@ export default function About() {
         paramedic to a specialist.
       </p>
 
-      <h1>
+      <Typography variant="h1">
         Technical Skills
-      </h1>
+      </Typography>
 
         <CustomImage  src={CurrentTechSkills} alt="Tech Skills Logos" boxShadow={false} width="70%" />
 
-      <h1>Qualifications</h1>
+      <Typography variant="h1">
+        Qualifications
+      </Typography>
       
       <DownloadList items={qualifications}/>
 

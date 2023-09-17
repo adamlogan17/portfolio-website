@@ -11,7 +11,9 @@ export default function ShowInstitution(props:Institution) {
   return (
     <div className="row">
       <div className="half-col">
-        <h3>{props.title}</h3>
+        <Typography variant='h3' gutterBottom>
+          {props.title}
+        </Typography>
 
         <i>{props.dateRange}</i>
 
@@ -21,9 +23,9 @@ export default function ShowInstitution(props:Institution) {
       </div>
 
       <div className="half-col">
-        <h4>
+        <Typography variant='h4' gutterBottom>
           {props.description?.roleName}
-        </h4>
+        </Typography>
         <p>
           {props.description?.description}                                 
         </p>
@@ -48,9 +50,9 @@ export default function ShowInstitution(props:Institution) {
           :
           (
             <>
-              <h4>
+              <Typography variant='h4' gutterBottom>
                 {props.role[0].roleName}
-              </h4>
+              </Typography>
               <p>
                 {props.role[0].description}                                 
               </p>

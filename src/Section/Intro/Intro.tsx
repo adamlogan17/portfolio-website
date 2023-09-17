@@ -1,4 +1,4 @@
-import { Link } from '@mui/material';
+import { Link, Typography } from '@mui/material';
 import '../../layout.css';
 
 import CV from '../../assets/downloads/Adam-Logan-CV.pdf';
@@ -10,9 +10,13 @@ export default function Intro() {
   return (
     <div className='row'>
       <div className="half-col">
-        <h2>Hello, I'm</h2>
+        <Typography variant='h2'>
+          Hello, I'm
+        </Typography>
 
-        <h1>Adam Logan</h1>
+        <Typography variant='h1'>
+          Adam Logan
+        </Typography>
 
         <p>You can view my CV <Link href={CV} target="_blank" download>here</Link></p>
       </div>

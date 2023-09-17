@@ -1,6 +1,9 @@
 import { motion } from "framer-motion"
 import useMediaQuery from "../../hooks/useMediaQuery";
 
+/**
+ * TODO investigate the particle image https://reactjsexample.com/render-images-as-interactive-particles-with-react/
+ */
 export default function CustomImage(props:Image) {
   let mediaTrigger =  useMediaQuery('(max-width: 1150px)');
   mediaTrigger = props.resizeOnSmallScreen === undefined ? mediaTrigger : props.resizeOnSmallScreen;

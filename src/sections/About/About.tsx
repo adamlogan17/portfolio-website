@@ -1,5 +1,7 @@
 import { Paper } from "@mui/material";
+
 import CurrentTechSkills from '../../assets/images/currentTechSkills.png';
+
 import '../../layout.css';
 
 import DownloadList from "../../components/DownloadList/DownloadList";

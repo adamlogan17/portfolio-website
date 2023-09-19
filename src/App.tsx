@@ -5,12 +5,12 @@ import { useMemo, useState } from 'react';
 import './App.css';
 
 import Footer from './components/Footer/Footer';
-import Intro from './Section/Intro/Intro';
-import About from './Section/About/About';
-import Projects from './Section/Projects/Projects';
+import Intro from './sections/Intro/Intro';
+import About from './sections/About/About';
+import Projects from './sections/Projects/Projects';
 import Navbar from './components/Navbar/Navbar';
-import Experience from './Section/Experience/Experience';
-import Education from './Section/Education/Education';
+import Experience from './sections/Experience/Experience';
+import Education from './sections/Education/Education';
 
 // link and button color is set by primary.main
 const lightThemePalette = {

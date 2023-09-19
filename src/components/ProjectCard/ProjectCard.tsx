@@ -13,12 +13,13 @@ export default function ProjectCard(props:ProjectCard) {
           '&:hover': {
             color: "text.primary"
           }}}>
-        <CardMedia
-          component="img"
-          height="300px"
-          image={props.img.src}
-          alt={props.img.alt}
-        />
+            <div style={{height:"290px", width:props.img.width !== undefined ? props.img.width : "", margin:'auto', paddingTop:"10px"}}>
+              <CardMedia
+                component="img"
+                image={props.img.src}
+                alt={props.img.alt}
+              />
+            </div>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             {props.title}

@@ -37,8 +37,6 @@ const darkThemePalette = {
     primary:'#ffffff'
   },
   background: {
-    // #1f2235
-    // #0a4275
     default:'#1f2235',
     paper: '#313552'
   }
@@ -60,17 +58,12 @@ const getDesignTokens = (mode: PaletteMode) => ({
   }
 });
 
-/**
- * @todo look at https://www.freecodecamp.org/news/animate-react-apps/ for animation
- * @todo add this https://marcbruederlin.github.io/particles.js/ for bg
- * @todo add img as bg https://stackoverflow.com/questions/55576512/setting-a-body-background-image-in-muithemeprovider
- */
 function App() {
   // default dark
-  // const [mode, setMode] = useState<'light' | 'dark'>(sessionStorage.getItem("MODE") !== 'light' ? 'dark' : 'light');
+  const [mode, setMode] = useState<'light' | 'dark'>(sessionStorage.getItem("MODE") !== 'light' ? 'dark' : 'light');
 
   // default light
-  const [mode, setMode] = useState<'light' | 'dark'>(sessionStorage.getItem("MODE") !== 'dark' ? 'light' : 'dark');
+  // const [mode, setMode] = useState<'light' | 'dark'>(sessionStorage.getItem("MODE") !== 'dark' ? 'light' : 'dark');
 
   const theme = useMemo(() => createTheme(getDesignTokens(mode)), [mode]);
 
@@ -79,7 +72,7 @@ function App() {
       toggleColorMode: () => {
         setMode((prevMode) => {
           const newMode = prevMode === 'light' ? 'dark' : 'light'
-          // sessionStorage.setItem("MODE", newMode);
+          sessionStorage.setItem("MODE", newMode);
           return newMode;
         });
       },

@@ -28,13 +28,12 @@ export default function Navbar(props:{palette:any, toggleMode: () => void, mode:
   
   return (
     <div style={props.stick ? {
-        borderRadius: '0px', 
         position:'fixed',
         top: '0%',
         width:'100%',
         zIndex: '1',
     } : {}}>
-      <Paper>
+      <Paper sx={{ borderRadius:'0px' }}>
         <MDBNavbar expand='lg'>
           <MDBContainer fluid id='page-wrapper'>
             <MDBNavbarBrand style={style} >

@@ -78,7 +78,6 @@ type Role = {
  * @property {Role} [description] - Optional general description about the tenure at the institution, this will not be shown in the accordion.
  * @property {Role[]} role - Array of specific roles or positions held at the institution.
  */
-
 type Institution = {
   title:string,
   dateRange:string,
@@ -100,4 +99,37 @@ type KeyValuePair = {
     key:string,
     value:string
   }[]
+}
+
+type CustomPallette = {
+  primary?:ColorOptions,
+  secondary?:ColorOptions,
+  error?:ColorOptions,
+  warning?:ColorOptions,
+  info?:ColorOptions,
+  success?:ColorOptions,
+  text:TextOptions,
+  background: {
+    default:string,
+    paper:string
+  }
+}
+
+type ColorOptions = {
+  main?:string,
+  light?:string,
+  dark?:string,
+  contrastText?:string
+}
+
+type TextOptions = {
+  primary:string,
+  secondary?:string,
+  disabled?:string,
+  h1?:string,
+  h2?:string,
+  h3?:string,
+  h4?:string,
+  h5?:string,
+  h6?:string
 }

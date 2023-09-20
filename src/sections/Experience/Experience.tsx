@@ -6,6 +6,7 @@ import pwcLogo from '../../assets/images/pwcLogo.png';
 import psniLogo from '../../assets/images/psniLogo.png';
 import catalystLogo from '../../assets/images/catalystLogo.png';
 import ulsterUniLogo from '../../assets/images/ulsterLogo.jfif';
+import { Typography } from '@mui/material';
 
 const experienceDetails:Institution[] = [
   {
@@ -256,9 +257,9 @@ export default function Experience() {
   return (
     <>
       <div className="row">
-        <h3>
-            Experience
-        </h3>
+        <Typography variant='h2' gutterBottom>
+          Experience
+        </Typography>
       </div>
 
       {experienceDetails.map((experience:any, key:number) => <ShowInstitution key={key} logo={experience.logo} title={experience.title} dateRange={experience.dateRange} role={experience.role} />)}

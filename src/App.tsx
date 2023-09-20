@@ -13,6 +13,7 @@ import Experience from './sections/Experience/Experience';
 import Education from './sections/Education/Education';
 
 // link and button color is set by primary.main
+// it is also important to note that the only 'offical' attributes of 'text' are primary, secondary and disabled, the other attributes are custom and are used in the typography section, in getDesignTokens
 const lightThemePalette = {
   primary: {
     main:'#000000'
@@ -34,26 +35,88 @@ const darkThemePalette = {
     main: '#368af6'
   },
   text: {
-    primary:'#ffffff'
+    primary:'#ffffff',
+    h2:'#368af6',
   },
   background: {
+    // #1f2235
+    // #0a4275
     default:'#1f2235',
     paper: '#313552'
   }
 }
+
+// Potential light theme
+// 379683
+// const lightThemePalette = {
+//   primary: {
+//     main: '#05386B'
+//   },
+//   secondary: {
+//     main: '#14A098'
+//   },
+//   text: {
+//     primary:'#EDF5E1'
+//   },
+//   background: {
+//     default:'#5CDB95',
+//     paper: '#379683'
+//   }
+// };
+
+// Potential dark theme
+// 501F3A
+// const darkThemePalette = {
+//   primary: {
+//     main: '#CB2D6F'
+//   },
+//   secondary: {
+//     main: '#14A098'
+//   },
+//   text: {
+//     primary:'#CCCCCC'
+//   },
+//   background: {
+//     default:'#0F292F',
+//     paper: '#0F292F'
+//   }
+// };
+
 const getDesignTokens = (mode: PaletteMode) => ({
   palette: {
     mode,
     ...(mode === 'light' ? lightThemePalette : darkThemePalette),
   },
-  overrides: {
+  components: {
     MuiCssBaseline: {
-      "@global": {
-        body: {
-          backgroundImage:
-            "url(https://designshack.net/wp-content/uploads/gradient-background.jpg)"
-        }
-      }
+      styleOverrides: (themeParam:any) => `
+        h1 {
+          color: ${themeParam.palette.text.h1};
+        },
+        h2 {
+          color: ${themeParam.palette.primary.main};
+        },
+        h4 {
+          color: ${themeParam.palette.text.h4};
+        },
+      `,
+    }
+  },
+  typography: {
+    h1: {
+      fontWeight: 500,
+      fontSize: '2.5rem'
+    },
+    h2: {
+      fontWeight: 3500,
+      fontSize: '2rem'
+    },
+    h3: {
+      fontWeight: 500,
+      fontSize: '1.75rem'
+    },
+    h4: {
+      fontSize: '2rem'
     }
   }
 });
@@ -84,7 +147,7 @@ function App() {
     <ThemeProvider theme={createTheme(theme)}>
       <CssBaseline />
 
-      <div id="wrapper">
+      <div id="wrapper">        
         <Navbar stick={true} progress={true} toggleMode={() => colorMode.toggleColorMode()} mode={mode} palette={mode === 'light' ? lightThemePalette : darkThemePalette} />
 
         <div id='page-wrapper'>

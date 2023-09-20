@@ -4,6 +4,7 @@ import '../../layout.css';
 
 import qubLogo from '../../assets/images/qubLogo.jpg';
 import belfastHighLogo from '../../assets/images/bhsLogo2.png';
+import { Typography } from '@mui/material';
 
 const qubLevel1:KeyValuePair = {
   title: "Level 1",
@@ -231,9 +232,9 @@ export default function Education() {
   return (
     <>
       <div className="row">
-        <h3>
+        <Typography variant="h2">
             Education
-        </h3>
+        </Typography>
       </div>
 
       {educationDetails.map((experience:any, key:number) => 

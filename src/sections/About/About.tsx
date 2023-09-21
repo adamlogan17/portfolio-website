@@ -128,25 +128,32 @@ export default function About() {
       </p>
 
       <p>
-        I enjoy educating people on the impact of
-        technology and how to use certain
-        technologies as demonstrated within my
-        role assisting in junior IT classes.
+        I'm a dedicated software engineer software engineer, passionate 
+        about technical innovation and collaborative teamwork. 
+        My experience spans diverse domains such as cloud, 
+        IoT, and finance transformation, and I possess 
+        hands-on expertise in tools like React, Python, and Java. 
+        I've consistently demonstrated my ability to work in 
+        multicultural environments, manage my time effectively, 
+        and approach challenges with innovative solutions. 
+        Throughout my career, I've navigated projects of 
+        all scales, from individual initiatives to expansive 
+        team collaborations. My commitment to continuous 
+        learning and best practices in software development 
+        is rooted both in a solid academic foundation and 
+        real-world experience.
       </p>
 
       <p>
-        I am also an active member in the Queen's
-        University Computing Society by attending
-        talks hosted by the society and by
-        participating within the 2020 Hack the
-        COVID Hackathon. Within this event I,
-        along with a team, presented our solution
-        to a coronavirus specific problem to a
-        panel of judges. I also participated in 
-        the 2021 Pediatrics Hackathon, in which 
-        I developed a mock app to assist in the 
-        flow of information from a responding 
-        paramedic to a specialist.
+        Additionally, I take pride in being an active member 
+        of the Queen's University Computing Society, regularly 
+        attending talks and participating in hackathons. Notably, 
+        during the 2020 Hack the COVID Hackathon, my team and I 
+        presented a novel solution addressing a coronavirus-specific 
+        challenge to a panel of experts. In the 2021 Paediatrics 
+        Hackathon, I spearheaded the development of a mock app, 
+        streamlining communication between paramedics and 
+        specialists during critical responses.
       </p>
 
       <Typography variant="h4">

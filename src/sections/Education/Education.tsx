@@ -23,11 +23,11 @@ const qubLevel1:KeyValuePair = {
     },
     {
       key:"Databases",
-      value:"85"
+      value:"83"
     },
     {
       key:"Architecture and Networks",
-      value:"83"
+      value:"85"
     },
     {
       key:"Web Technologies	",
@@ -57,7 +57,7 @@ const qubLevel2:KeyValuePair = {
     },
     {
       key:"Service Oriented Programming",
-      value:"94",
+      value:"93",
     }
   ]
 }

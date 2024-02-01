@@ -40,7 +40,7 @@ const qubLevel2:KeyValuePair = {
   title: "Level 2",
   data: [ 
     {
-      key:"Professional and Transferable Skills",
+      key:"Professional and Transferrable Skills",
       value:"86",
     },
     {
@@ -52,11 +52,11 @@ const qubLevel2:KeyValuePair = {
       value:"84",
     },
     {
-      key:"Cyber Security",
+      key:"Cyber Security Fundamentals",
       value:"84",
     },
     {
-      key:"Service Oriented Programming",
+      key:"Service-Oriented Programming",
       value:"93",
     }
   ]
@@ -74,8 +74,20 @@ const qubLevel3:KeyValuePair = {
       value:"73",
     },
     {
-      key:"Software Development Practices",
+      key:"Software Development Practice",
       value:"71",
+    },
+    {
+      key:"Advanced Computer Architecture",
+      value:"86",
+    },
+    {
+      key:"Software Engineering Enterprise Project",
+      value:"77",
+    },
+    {
+      key:"Team-based Software Innovation",
+      value:"73",
     }
   ]
 }

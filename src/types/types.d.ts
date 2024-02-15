@@ -12,15 +12,15 @@
  * @property {MotionStyle} [imageStyle] - Optional style property for the image using Motion (like Framer Motion), this overrides all other styles including those defined above.
  */
 type Image = {
-  src:string,
-  alt:string,
-  background?:string,
-  width?:string,
-  height?:string,
-  boxShadow?:boolean,
-  resizeOnSmallScreen?:boolean,
-  imageStyle?:MotionStyle
-}
+	src: string;
+	alt: string;
+	background?: string;
+	width?: string;
+	height?: string;
+	boxShadow?: boolean;
+	resizeOnSmallScreen?: boolean;
+	imageStyle?: MotionStyle;
+};
 
 /**
  * Used to represent a file which can be downloaded
@@ -32,11 +32,11 @@ type Image = {
  * @property {string} download - Link or path to the downloadable resource.
  */
 type DownloadItem = {
-  name:string,
-  description?:string,
-  avatar?:Image,
-  download:string
-}
+	name: string;
+	description?: string;
+	avatar?: Image;
+	download: string;
+};
 
 /**
  * Represents a card with a title, image, text and a link
@@ -48,11 +48,11 @@ type DownloadItem = {
  * @property {string} projectUrl - URL link to the project.
  */
 type ProjectCard = {
-  title:string,
-  img: Image,
-  text:string,
-  projectUrl:string
-}
+	title: string;
+	img: Image;
+	text: string;
+	projectUrl: string;
+};
 
 /**
  * Represents a role within an institution, such as a student or employee.
@@ -63,10 +63,10 @@ type ProjectCard = {
  * @property {JSX.Element} description - Detailed description or tasks of the role, using JSX elements.
  */
 type Role = {
-  roleName:string,
-  dateRange?:string,
-  description:JSX.Element
-}
+	roleName: string;
+	dateRange?: string;
+	description: JSX.Element;
+};
 
 /**
  * Represents an institution, such as a school or company.
@@ -79,12 +79,12 @@ type Role = {
  * @property {Role[]} role - Array of specific roles or positions held at the institution.
  */
 type Institution = {
-  title:string,
-  dateRange:string,
-  logo:Image,
-  description?:Role,
-  role:Role[]
-}
+	title: string;
+	dateRange: string;
+	logo: Image;
+	description?: Role;
+	role: Role[];
+};
 
 /**
  * KeyValuePair
@@ -94,42 +94,42 @@ type Institution = {
  * @property {{key: string, value: string}[]} data - Array of key-value pairs.
  */
 type KeyValuePair = {
-  title?:string,
-  data:{
-    key:string,
-    value:string
-  }[]
-}
+	title?: string;
+	data: {
+		key: string;
+		value: string;
+	}[];
+};
 
 type CustomPallette = {
-  primary?:ColorOptions,
-  secondary?:ColorOptions,
-  error?:ColorOptions,
-  warning?:ColorOptions,
-  info?:ColorOptions,
-  success?:ColorOptions,
-  text:TextOptions,
-  background: {
-    default:string,
-    paper:string
-  }
-}
+	primary?: ColorOptions;
+	secondary?: ColorOptions;
+	error?: ColorOptions;
+	warning?: ColorOptions;
+	info?: ColorOptions;
+	success?: ColorOptions;
+	text: TextOptions;
+	background: {
+		default: string;
+		paper: string;
+	};
+};
 
 type ColorOptions = {
-  main?:string,
-  light?:string,
-  dark?:string,
-  contrastText?:string
-}
+	main?: string;
+	light?: string;
+	dark?: string;
+	contrastText?: string;
+};
 
 type TextOptions = {
-  primary:string,
-  secondary?:string,
-  disabled?:string,
-  h1?:string,
-  h2?:string,
-  h3?:string,
-  h4?:string,
-  h5?:string,
-  h6?:string
-}
+	primary: string;
+	secondary?: string;
+	disabled?: string;
+	h1?: string;
+	h2?: string;
+	h3?: string;
+	h4?: string;
+	h5?: string;
+	h6?: string;
+};

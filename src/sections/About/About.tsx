@@ -1,8 +1,8 @@
-import { Paper, Typography } from "@mui/material";
+import { Paper, Typography } from '@mui/material';
 import CurrentTechSkills from '../../assets/images/currentTechSkills.png';
 import '../../layout.css';
 
-import DownloadList from "../../components/DownloadList/DownloadList";
+import DownloadList from '../../components/DownloadList/DownloadList';
 
 import Vantiq from '../../assets/images/vantiqSquareLogo.jpeg';
 import Microsoft from '../../assets/images/microsoftLogo.png';
@@ -21,159 +21,137 @@ import AlteryxCert from '../../assets/downloads/Qualifications/Alteryx-Designer-
 import DofEdCert from '../../assets/downloads/Qualifications/DofEd.pdf';
 import UBELT from '../../assets/downloads/Qualifications/GCSE/CCEA/UBELT/UBELT.pdf';
 import VantiqCert from '../../assets/downloads/Qualifications/VANTIQ-Developer-Level-1.pdf';
-import CustomImage from "../../components/CustomImage/CustomImage";
+import CustomImage from '../../components/CustomImage/CustomImage';
 
-const microsoftAvatar:Image = {
-  src:Microsoft,
-  alt:"Microsoft Logo",
-  background:'white',
-  imageStyle: {
-    width:'75%',
-    height:'75%'
-  }
+const microsoftAvatar: Image = {
+	src: Microsoft,
+	alt: 'Microsoft Logo',
+	background: 'white',
+	imageStyle: {
+		width: '75%',
+		height: '75%'
+	}
 };
 
-const qualifications:DownloadItem[] = [
-  {
-    name:'Civica Award',
-    description:'Awarded by achieving highest in the year in the module CSC2058 Systems Development',
-    download:CivicaAward,
-    avatar: {
-      src:QUB,
-      alt:"Queen's University Belfast Logo"
-    }
-  },
-  {
-    name:'Microsoft AI Fundamentals (AI-900)',
-    download:AI900,
-    avatar: microsoftAvatar
-  },
-  {
-    name:'Microsoft Security Fundamentals (SC-900)',
-    download:SC900,
-    avatar: microsoftAvatar
-  },
-  {
-    name:'Microsoft Azure Fundamentals (AZ-900)',
-    download:AZ900,
-    avatar: microsoftAvatar
-  },
-  {
-    name:'Microsoft Data Fundamentals (DP-900)',
-    download: DP900,
-    avatar: microsoftAvatar
-  },
-  {
-    name:'Vantiq Developer (Level 1)',
-    download:VantiqCert,
-    avatar: {
-      src:Vantiq,
-      alt:"Vantiq Logo"
-    }
-  },
-  {
-    name:'Alteryx Designer Core',
-    download:AlteryxCert,
-    avatar: {
-      src:Alteryx,
-      background:'white',
-      alt:"Alteryx Logo"
-    }
-  },
-  {
-    name:'PwC Digital Acumen Badge',
-    download:'https://www.credly.com/badges/93896f07-7099-4864-9797-c01c6b92bb9c/public_url',
-    avatar: {
-      src:PwC,
-      alt:"PwC Logo"
-    }
-  },
-  {
-    name:'Understanding Business, Language and Tourism (Level 2)',
-    download:UBELT,
-    avatar: {
-      src:CCEA,
-      background:'white',
-      imageStyle: { objectFit:'contain' },
-      alt:"CCEA Logo"
-    }
-  },
-  {
-    name:'Bronze Duke of Edinburgh Award',
-    download:DofEdCert,
-    avatar: {
-      src:DofEd,
-      alt:"Duke Of Edinburgh Award Logo",
-      background:'white',
-      imageStyle: { objectFit:'contain' }
-    }
-  }
-]
+const qualifications: DownloadItem[] = [
+	{
+		name: 'Civica Award',
+		description: 'Awarded by achieving highest in the year in the module CSC2058 Systems Development',
+		download: CivicaAward,
+		avatar: {
+			src: QUB,
+			alt: "Queen's University Belfast Logo"
+		}
+	},
+	{
+		name: 'Microsoft AI Fundamentals (AI-900)',
+		download: AI900,
+		avatar: microsoftAvatar
+	},
+	{
+		name: 'Microsoft Security Fundamentals (SC-900)',
+		download: SC900,
+		avatar: microsoftAvatar
+	},
+	{
+		name: 'Microsoft Azure Fundamentals (AZ-900)',
+		download: AZ900,
+		avatar: microsoftAvatar
+	},
+	{
+		name: 'Microsoft Data Fundamentals (DP-900)',
+		download: DP900,
+		avatar: microsoftAvatar
+	},
+	{
+		name: 'Vantiq Developer (Level 1)',
+		download: VantiqCert,
+		avatar: {
+			src: Vantiq,
+			alt: 'Vantiq Logo'
+		}
+	},
+	{
+		name: 'Alteryx Designer Core',
+		download: AlteryxCert,
+		avatar: {
+			src: Alteryx,
+			background: 'white',
+			alt: 'Alteryx Logo'
+		}
+	},
+	{
+		name: 'PwC Digital Acumen Badge',
+		download: 'https://www.credly.com/badges/93896f07-7099-4864-9797-c01c6b92bb9c/public_url',
+		avatar: {
+			src: PwC,
+			alt: 'PwC Logo'
+		}
+	},
+	{
+		name: 'Understanding Business, Language and Tourism (Level 2)',
+		download: UBELT,
+		avatar: {
+			src: CCEA,
+			background: 'white',
+			imageStyle: { objectFit: 'contain' },
+			alt: 'CCEA Logo'
+		}
+	},
+	{
+		name: 'Bronze Duke of Edinburgh Award',
+		download: DofEdCert,
+		avatar: {
+			src: DofEd,
+			alt: 'Duke Of Edinburgh Award Logo',
+			background: 'white',
+			imageStyle: { objectFit: 'contain' }
+		}
+	}
+];
 
 export default function About() {
-  
-  return (
-    <Paper className='row' sx={{
-      borderRadius: '50px',
-      padding: '10px',
-      paddingTop: '25px',
-      paddingBottom: '25px'
-    }}>
-      <Typography variant="h2">
-        About Me
-      </Typography>
+	return (
+		<Paper
+			className='row'
+			sx={{
+				borderRadius: '50px',
+				padding: '10px',
+				paddingTop: '25px',
+				paddingBottom: '25px'
+			}}
+		>
+			<Typography variant='h2'>About Me</Typography>
 
-      <Typography variant="h4">
-        A little bit about me
-      </Typography>
+			<Typography variant='h4'>A little bit about me</Typography>
 
-      <p>
-        I am currently studying Software
-        Engineering with Digital Technology (PwC)
-        at Queens University Belfast.
-      </p>
+			<p>I am currently studying Software Engineering with Digital Technology (PwC) at Queens University Belfast.</p>
 
-      <p>
-        I'm a dedicated software engineer software engineer, passionate 
-        about technical innovation and collaborative teamwork. 
-        My experience spans diverse domains such as cloud, 
-        IoT, and finance transformation, and I possess 
-        hands-on expertise in tools like React, Python, and Java. 
-        I've consistently demonstrated my ability to work in 
-        multicultural environments, manage my time effectively, 
-        and approach challenges with innovative solutions. 
-        Throughout my career, I've navigated projects of 
-        all scales, from individual initiatives to expansive 
-        team collaborations. My commitment to continuous 
-        learning and best practices in software development 
-        is rooted both in a solid academic foundation and 
-        real-world experience.
-      </p>
+			<p>
+				I'm a dedicated software engineer software engineer, passionate about technical innovation and collaborative
+				teamwork. My experience spans diverse domains such as cloud, IoT, and finance transformation, and I possess
+				hands-on expertise in tools like React, Python, and Java. I've consistently demonstrated my ability to work in
+				multicultural environments, manage my time effectively, and approach challenges with innovative solutions.
+				Throughout my career, I've navigated projects of all scales, from individual initiatives to expansive team
+				collaborations. My commitment to continuous learning and best practices in software development is rooted both
+				in a solid academic foundation and real-world experience.
+			</p>
 
-      <p>
-        Additionally, I take pride in being an active member 
-        of the Queen's University Computing Society, regularly 
-        attending talks and participating in hackathons. Notably, 
-        during the 2020 Hack the COVID Hackathon, my team and I 
-        presented a novel solution addressing a coronavirus-specific 
-        challenge to a panel of experts. In the 2021 Paediatrics 
-        Hackathon, I spearheaded the development of a mock app, 
-        streamlining communication between paramedics and 
-        specialists during critical responses.
-      </p>
+			<p>
+				Additionally, I take pride in being an active member of the Queen's University Computing Society, regularly
+				attending talks and participating in hackathons. Notably, during the 2020 Hack the COVID Hackathon, my team and
+				I presented a novel solution addressing a coronavirus-specific challenge to a panel of experts. In the 2021
+				Paediatrics Hackathon, I spearheaded the development of a mock app, streamlining communication between
+				paramedics and specialists during critical responses.
+			</p>
 
-      <Typography variant="h4">
-        Technical Skills
-      </Typography>
+			<Typography variant='h4'>Technical Skills</Typography>
 
-        <CustomImage  src={CurrentTechSkills} alt="Tech Skills Logos" boxShadow={false} width="70%" />
+			<CustomImage src={CurrentTechSkills} alt='Tech Skills Logos' boxShadow={false} width='70%' />
 
-      <Typography variant="h4">
-        Qualifications
-      </Typography>
-      
-      <DownloadList items={qualifications}/>
+			<Typography variant='h4'>Qualifications</Typography>
 
-    </Paper>
-  );
+			<DownloadList items={qualifications} />
+		</Paper>
+	);
 }

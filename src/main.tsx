@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 
 // mdb react imports
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
-import "@fortawesome/fontawesome-free/css/all.min.css";
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 // material ui Roboto fonts
 import '@fontsource/roboto/300.css';
@@ -11,12 +11,11 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 
-
 import App from './App.tsx';
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+	<React.StrictMode>
+		<App />
+	</React.StrictMode>
+);

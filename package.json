@@ -4,7 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "npm run prettier && vite",
+    "prettier": "prettier --write \"./**/*.{js,ts,jsx,tsx,cjs}\"",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
@@ -18,6 +19,7 @@
     "@mui/material": "^5.14.2",
     "framer-motion": "^10.15.0",
     "mdb-react-ui-kit": "^6.1.0",
+    "prettier": "^3.2.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-particle-image": "^1.0.2",

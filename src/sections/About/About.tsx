@@ -16,6 +16,7 @@ import CivicaAward from '../../assets/downloads/Qualifications/Civica-Award.pdf'
 import AI900 from '../../assets/downloads/Qualifications/Microsoft-AI-Fundamentals-Certificate.pdf';
 import AZ900 from '../../assets/downloads/Qualifications/Microsoft-Azure-Fundamentals-Certificate.pdf';
 import SC900 from '../../assets/downloads/Qualifications/Microsoft-Security-Fundamentals-Certificate.pdf';
+import DP900 from '../../assets/downloads/Qualifications/Microsoft-Data-Fundamentals-Certificate.pdf';
 import AlteryxCert from '../../assets/downloads/Qualifications/Alteryx-Designer-Core-Certification.pdf';
 import DofEdCert from '../../assets/downloads/Qualifications/DofEd.pdf';
 import UBELT from '../../assets/downloads/Qualifications/GCSE/CCEA/UBELT/UBELT.pdf';
@@ -55,6 +56,11 @@ const qualifications:DownloadItem[] = [
   {
     name:'Microsoft Azure Fundamentals (AZ-900)',
     download:AZ900,
+    avatar: microsoftAvatar
+  },
+  {
+    name:'Microsoft Data Fundamentals (DP-900)',
+    download: DP900,
     avatar: microsoftAvatar
   },
   {

@@ -8,6 +8,10 @@ export default function CustomImage(props:Image) {
   let mediaTrigger =  useMediaQuery('(max-width: 1150px)');
   mediaTrigger = props.resizeOnSmallScreen === undefined ? mediaTrigger : props.resizeOnSmallScreen;
 
+  if(mediaTrigger) {
+    console.log("here");
+  }
+
   const style = props.imageStyle || {
     width: mediaTrigger ? '100%' : props.width === undefined ? '95%' : props.width,
     borderRadius: '5%',

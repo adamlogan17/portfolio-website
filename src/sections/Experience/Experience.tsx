@@ -37,7 +37,7 @@ const experienceDetails: Institution[] = [
         description: (
           <>
             <p>
-              During my my time with the Bank of England, I concurrently worked on two workteams. One focused on 
+              During my time with the Bank of England, I concurrently worked on two workteams. One focused on 
               scrutinising the Bank's cutover plan for the RTGS system, overseeing CHAPS and other payment methods, 
               while the other involved evaluating the configuration of four critical Oracle databases.
             </p>

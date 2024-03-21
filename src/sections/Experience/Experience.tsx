@@ -17,8 +17,43 @@ const experienceDetails: Institution[] = [
 			alt: 'PwC Logo'
 		},
 		role: [
+      // {
+      //   roleName: 'Ministry of Defence', // (04/03/2024 -  29/03/2024)
+      //   dateRange: 'Mar 2024',
+      //   description: (
+      //     <>
+      //       <p>
+      //         While working with the Ministry of Defence, I assisted in developing a new Data & Digital strategy for the
+      //         Royal Navy in regards to ship maintenance. Not only did I work with colleagues from PwC but I also worked
+      //         directly with PA consulting and V-Ships. My role consisted of gathering advice and feedback from SMEs across
+      //         the consortium, and then consolidating this information into a comprehensive report.
+      //       </p>
+      //     </>
+      //   )
+      // },
+      {
+        roleName: 'Bank of England',
+        dateRange: 'Jan 2024 - Feb 2024', // (15/01/2024 -  01/03/2024)
+        description: (
+          <>
+            <p>
+              During my my time with the Bank of England, I concurrently worked on two workteams. One focused on 
+              scrutinising the Bank's cutover plan for the RTGS system, overseeing CHAPS and other payment methods, 
+              while the other involved evaluating the configuration of four critical Oracle databases.
+            </p>
+
+            <p>
+              My responsibilities included compiling weekly status reports for the client, facilitating workshops 
+              with the Bank, and reviewing Slaughter and May's report on the failed TSB cutover in 2018 to assess 
+              potential risks in the Bank's cutover plan. Additionally, I conducted thorough analyses of Oracle 
+              documentation and the Bank's configurations to identify potential risks during the Oracle database 
+              review.
+            </p>
+          </>
+        )
+      },
 			{
-				roleName: 'Form Builder',
+				roleName: 'Prototype Development',
 				dateRange: 'Jun 2023 - Jul 2023', // (05/06/2023 -  28/07/2023)
 				description: (
 					<>
@@ -45,7 +80,7 @@ const experienceDetails: Institution[] = [
 				)
 			},
 			{
-				roleName: 'Azure Functions',
+				roleName: 'University College London (UCL)',
 				dateRange: 'Aug 2023 - Sept 2023', // (31/07/2023 -  15/09/2023)
 				description: (
 					<>
@@ -58,7 +93,7 @@ const experienceDetails: Institution[] = [
 				)
 			},
 			{
-				roleName: 'AppScript',
+				roleName: 'Internal Tool Development',
 				dateRange: 'Nov 2022 - Dec 2022', // (21/11/2022 -  30/12/2022)
 				description: (
 					<>
@@ -132,7 +167,7 @@ const experienceDetails: Institution[] = [
 				)
 			},
 			{
-				roleName: 'Salesforce',
+				roleName: 'Provident',
 				dateRange: 'Jun 2021 - Aug 2021', // (14/06/2021 - 16/08/2021)
 				description: (
 					<>
@@ -190,26 +225,26 @@ const experienceDetails: Institution[] = [
 			}
 		]
 	},
-	{
-		title: 'PwC',
-		dateRange: 'Jul 2019', // (22/07/2019–26/07/2019)
-		logo: {
-			src: pwcLogo,
-			alt: 'PwC Logo'
-		},
-		role: [
-			{
-				roleName: 'Software Engineer',
-				description: (
-					<>
-						This week at PwC taught me how and the <i>importance of sticking to deadlines</i> and how to{' '}
-						<i>manage my time effectively</i> to achieve this goal. I also got an insight on the day-to-day operations
-						of large organisations and the structure in which these organisations may be built upon.
-					</>
-				)
-			}
-		]
-	},
+	// {
+	// 	title: 'PwC',
+	// 	dateRange: 'Jul 2019', // (22/07/2019–26/07/2019)
+	// 	logo: {
+	// 		src: pwcLogo,
+	// 		alt: 'PwC Logo'
+	// 	},
+	// 	role: [
+	// 		{
+	// 			roleName: 'Software Engineer',
+	// 			description: (
+	// 				<>
+	// 					This week at PwC taught me how and the <i>importance of sticking to deadlines</i> and how to{' '}
+	// 					<i>manage my time effectively</i> to achieve this goal. I also got an insight on the day-to-day operations
+	// 					of large organisations and the structure in which these organisations may be built upon.
+	// 				</>
+	// 			)
+	// 		}
+	// 	]
+	// },
 	{
 		title: 'Catalyst',
 		dateRange: 'Jun 2019', // (17/06/2019 – 20/06/2019)

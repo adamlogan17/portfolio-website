@@ -5,53 +5,110 @@ import easonLogo from '../../assets/images/easonsLogo.png';
 import pwcLogo from '../../assets/images/pwcLogo.png';
 import psniLogo from '../../assets/images/psniLogo.png';
 import catalystLogo from '../../assets/images/catalystLogo.png';
-import ulsterUniLogo from '../../assets/images/ulsterLogo.jfif';
+// import ulsterUniLogo from '../../assets/images/ulsterLogo.jfif';
+import eqLogo from '../../assets/images/everquoteLogo.png';
 import { Typography } from '@mui/material';
 
 const experienceDetails: Institution[] = [
 	{
+		title: 'EverQuote',
+		dateRange: 'Aug 2024 - Current',
+		logo: {
+			src: eqLogo,
+			alt: 'EverQuote Logo'
+		},
+		role: [
+			{
+				roleName: 'Machine Learning Engineer',
+				description: (
+					<>
+						<p>
+							At EverQuote, I work within the Machine Learning Engineering team, where I support data scientists by
+							managing essential services like JupyterLab and MLflow for model development. I oversee an internal tool
+							that provides models as endpoints using a Model as a Service (MaaS) architecture. I also manage an
+							internal tool which provides models as endpoints to users, using a Model as a Service architecture.
+							Throughout the management of this tool, I am required to assist data scientists in the deployment of their
+							models, as well as the monitoring the performance of these models. I contribute to developing new features
+							for the tool to improve the efficiency of model deployment and performance tracking. This role has
+							deepened my expertise in AWS, Kubernetes, and Django.
+						</p>
+					</>
+				)
+			}
+		]
+	},
+	{
 		title: 'PwC',
-		dateRange: 'Sep 2020 - Current',
+		dateRange: 'Sep 2020 - Aug 2024', // (10/09.2020 - 14/05/2024)
 		logo: {
 			src: pwcLogo,
 			alt: 'PwC Logo'
 		},
 		role: [
-      {
-        roleName: 'Ministry of Defence', // (04/03/2024 -  29/03/2024)
-        dateRange: 'Mar 2024',
-        description: (
-          <>
-            <p>
-              While working with the Ministry of Defence, I assisted in developing a new Data & Digital strategy for the
-              Royal Navy in regards to ship maintenance. Not only did I work with colleagues from PwC but I also worked
-              directly with PA consulting and V-Ships. My role consisted of gathering advice and feedback from SMEs across
-              the consortium, and then consolidating this information into a comprehensive report.
-            </p>
-          </>
-        )
-      },
-      {
-        roleName: 'Bank of England',
-        dateRange: 'Jan 2024 - Feb 2024', // (15/01/2024 -  01/03/2024)
-        description: (
-          <>
-            <p>
-              During my time with the Bank of England, I concurrently worked on two workstreams. One focused on 
-              scrutinising the Bank's cutover plan for the RTGS system, overseeing CHAPS and other payment methods, 
-              while the other involved evaluating the configuration of four critical Oracle databases.
-            </p>
+			{
+				roleName: 'Oxfordshire County Council', // (01/04/2024 -  24/05/2024)
+				dateRange: 'Apr 2024 - May 2024',
+				description: (
+					<>
+						<p>
+							During my time with Oxfordshire County Council, I contributed to upgrading the general phone helpline by
+							implementing voice automation using Amazon Lex. This involved conducting interviews with stakeholders from
+							various council departments to understand their services and common public inquiries. Using the insights
+							gathered, I developed process flows for the new helpline to address frequently asked questions, helping to
+							reduce the demand on call agents. Additionally, I gained hands-on experience with the Amazon Lex service
+							by developing the voice automation system.
+						</p>
+					</>
+				)
+			},
+			{
+				roleName: 'Ministry of Defence', // (04/03/2024 -  29/03/2024)
+				dateRange: 'Mar 2024',
+				description: (
+					<>
+						<p>
+							While working with the Ministry of Defence, I assisted in developing a new Data & Digital strategy for the
+							Royal Navy in regards to ship maintenance. Not only did I work with colleagues from PwC but I also worked
+							directly with PA consulting and V-Ships. My role consisted of gathering advice and feedback from SMEs
+							across the consortium, and then consolidating this information into a comprehensive report.
+						</p>
+					</>
+				)
+			},
+			{
+				roleName: 'Ministry of Defence', // (04/03/2024 -  29/03/2024)
+				dateRange: 'Mar 2024',
+				description: (
+					<>
+						<p>
+							While working with the Ministry of Defence, I assisted in developing a new Data & Digital strategy for the
+							Royal Navy in regards to ship maintenance. Not only did I work with colleagues from PwC but I also worked
+							directly with PA consulting and V-Ships. My role consisted of gathering advice and feedback from SMEs
+							across the consortium, and then consolidating this information into a comprehensive report.
+						</p>
+					</>
+				)
+			},
+			{
+				roleName: 'Bank of England',
+				dateRange: 'Jan 2024 - Feb 2024', // (15/01/2024 -  01/03/2024)
+				description: (
+					<>
+						<p>
+							During my time with the Bank of England, I concurrently worked on two workstreams. One focused on
+							scrutinising the Bank's cutover plan for the RTGS system, overseeing CHAPS and other payment methods,
+							while the other involved evaluating the configuration of four critical Oracle databases.
+						</p>
 
-            <p>
-              My responsibilities included compiling weekly status reports for the client, facilitating workshops 
-              with the Bank, and reviewing Slaughter and May's report on the failed TSB cutover in 2018 to assess 
-              potential risks in the Bank's cutover plan. Additionally, I conducted thorough analyses of Oracle 
-              documentation and the Bank's configurations to identify potential risks during the Oracle database 
-              review.
-            </p>
-          </>
-        )
-      },
+						<p>
+							My responsibilities included compiling weekly status reports for the client, facilitating workshops with
+							the Bank, and reviewing Slaughter and May's report on the failed TSB cutover in 2018 to assess potential
+							risks in the Bank's cutover plan. Additionally, I conducted thorough analyses of Oracle documentation and
+							the Bank's configurations to identify potential risks during the Oracle database review.
+						</p>
+					</>
+				)
+			},
 			{
 				roleName: 'Prototype Development',
 				dateRange: 'Jun 2023 - Jul 2023', // (05/06/2023 -  28/07/2023)
@@ -266,28 +323,28 @@ const experienceDetails: Institution[] = [
 			}
 		]
 	},
-	{
-		title: 'Ulster University',
-		dateRange: 'Mar 2019', // (17/03/2019 – 20/03/2019)
-		logo: {
-			src: ulsterUniLogo,
-			alt: 'Ulster University Logo'
-		},
-		role: [
-			{
-				roleName: 'Researcher',
-				description: (
-					<>
-						I spent three days at Ulster University, as part of the Sentinus Insight Into IT program, and this is where
-						I conducted several experiments on virtual laboratories. This work experience program helped me to improve
-						my
-						<i>report writing skills</i> and <i>my research skills</i> through researching the different experiments
-						which I carried out, such as an experiment on Brownian motion, and writing a report on these findings.
-					</>
-				)
-			}
-		]
-	}
+	// {
+	// 	title: 'Ulster University',
+	// 	dateRange: 'Mar 2019', // (17/03/2019 – 20/03/2019)
+	// 	logo: {
+	// 		src: ulsterUniLogo,
+	// 		alt: 'Ulster University Logo'
+	// 	},
+	// 	role: [
+	// 		{
+	// 			roleName: 'Researcher',
+	// 			description: (
+	// 				<>
+	// 					I spent three days at Ulster University, as part of the Sentinus Insight Into IT program, and this is where
+	// 					I conducted several experiments on virtual laboratories. This work experience program helped me to improve
+	// 					my
+	// 					<i>report writing skills</i> and <i>my research skills</i> through researching the different experiments
+	// 					which I carried out, such as an experiment on Brownian motion, and writing a report on these findings.
+	// 				</>
+	// 			)
+	// 		}
+	// 	]
+	// }
 ];
 
 export default function Experience() {

@@ -125,24 +125,30 @@ export default function About() {
 
 			<Typography variant='h4'>A little bit about me</Typography>
 
-			<p>I am currently studying Software Engineering with Digital Technology (PwC) at Queens University Belfast.</p>
+			<br />
+			<br />
 
 			<p>
-				I'm a dedicated software engineer software engineer, passionate about technical innovation and collaborative
-				teamwork. My experience spans diverse domains such as cloud, IoT, and finance transformation, and I possess
-				hands-on expertise in tools like React, Python, and Java. I've consistently demonstrated my ability to work in
-				multicultural environments, manage my time effectively, and approach challenges with innovative solutions.
+				I am currently a Software Engineer within the Machine Learning Engineering team at EverQuote. Previously, I was
+				apart of the flying start technology degree programme, as a technology consultant at PwC studying Software
+				Engineering at Queen's University Belfast.
+			</p>
+
+			<p>
+				I'm a dedicated software engineer, passionate about technical innovation and collaborative teamwork. My
+				experience spans diverse domains such as machine learning, IoT, and finance transformation, and I possess
+				hands-on expertise in tools such as React, Python, and Java. I've consistently demonstrated my ability to work
+				in multicultural environments, manage my time effectively, and approach challenges with innovative solutions.
 				Throughout my career, I've navigated projects of all scales, from individual initiatives to expansive team
 				collaborations. My commitment to continuous learning and best practices in software development is rooted both
 				in a solid academic foundation and real-world experience.
 			</p>
 
 			<p>
-				Additionally, I take pride in being an active member of the Queen's University Computing Society, regularly
-				attending talks and participating in hackathons. Notably, during the 2020 Hack the COVID Hackathon, my team and
-				I presented a novel solution addressing a coronavirus-specific challenge to a panel of experts. In the 2021
-				Paediatrics Hackathon, I spearheaded the development of a mock app, streamlining communication between
-				paramedics and specialists during critical responses.
+				Additionally, I take pride in being an active member of the tech community, regularly attending talks and
+				participating in hackathons. Notably, I have attended conferences such as the AWS cloud day and NIDC. These
+				events have allowed me to network with industry professionals and engage with topics which are not covered
+				within my day-to-day work.
 			</p>
 
 			<Typography variant='h4'>Technical Skills</Typography>

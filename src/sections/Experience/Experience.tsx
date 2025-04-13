@@ -76,20 +76,6 @@ const experienceDetails: Institution[] = [
 				)
 			},
 			{
-				roleName: 'Ministry of Defence', // (04/03/2024 -  29/03/2024)
-				dateRange: 'Mar 2024',
-				description: (
-					<>
-						<p>
-							While working with the Ministry of Defence, I assisted in developing a new Data & Digital strategy for the
-							Royal Navy in regards to ship maintenance. Not only did I work with colleagues from PwC but I also worked
-							directly with PA consulting and V-Ships. My role consisted of gathering advice and feedback from SMEs
-							across the consortium, and then consolidating this information into a comprehensive report.
-						</p>
-					</>
-				)
-			},
-			{
 				roleName: 'Bank of England',
 				dateRange: 'Jan 2024 - Feb 2024', // (15/01/2024 -  01/03/2024)
 				description: (

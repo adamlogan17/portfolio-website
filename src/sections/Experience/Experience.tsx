@@ -308,7 +308,7 @@ const experienceDetails: Institution[] = [
 				)
 			}
 		]
-	},
+	}
 	// {
 	// 	title: 'Ulster University',
 	// 	dateRange: 'Mar 2019', // (17/03/2019 – 20/03/2019)

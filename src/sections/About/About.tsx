@@ -11,6 +11,7 @@ import DofEd from '../../assets/images/dofeLogo.svg';
 import QUB from '../../assets/images/qubLogo.jpg';
 import Alteryx from '../../assets/images/alteryxLogo.png';
 import CCEA from '../../assets/images/cceaLogo.png';
+import AWS from '../../assets/images/awsLogo.png';
 
 import CivicaAward from '../../assets/downloads/Qualifications/Civica-Award.pdf';
 import AI900 from '../../assets/downloads/Qualifications/Microsoft-AI-Fundamentals-Certificate.pdf';
@@ -21,6 +22,7 @@ import AlteryxCert from '../../assets/downloads/Qualifications/Alteryx-Designer-
 import DofEdCert from '../../assets/downloads/Qualifications/DofEd.pdf';
 import UBELT from '../../assets/downloads/Qualifications/GCSE/CCEA/UBELT/UBELT.pdf';
 import VantiqCert from '../../assets/downloads/Qualifications/VANTIQ-Developer-Level-1.pdf';
+
 import CustomImage from '../../components/CustomImage/CustomImage';
 
 const microsoftAvatar: Image = {
@@ -33,6 +35,11 @@ const microsoftAvatar: Image = {
 	}
 };
 
+const awsLogo: Image = {
+  src: AWS,
+  alt: 'AWS Logo'
+};
+
 const qualifications: DownloadItem[] = [
 	{
 		name: 'Civica Award',
@@ -42,6 +49,16 @@ const qualifications: DownloadItem[] = [
 			src: QUB,
 			alt: "Queen's University Belfast Logo"
 		}
+	},
+	{
+		name: 'AWS Cloud Practitioner',
+		download: 'https://www.credly.com/badges/37c52349-f1e9-4cd1-985e-4886d5aab234/public_url',
+		avatar: awsLogo
+	},
+  {
+		name: 'AWS Certified AI Practitioner',
+		download: 'https://www.credly.com/badges/ca0e8cd0-3942-4137-8647-f4c1f86a52c4/public_url',
+		avatar: awsLogo
 	},
 	{
 		name: 'Microsoft AI Fundamentals (AI-900)',

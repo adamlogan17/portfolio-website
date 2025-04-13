@@ -11,6 +11,7 @@ import Projects from './sections/Projects/Projects';
 import Navbar from './components/Navbar/Navbar';
 import Experience from './sections/Experience/Experience';
 import Education from './sections/Education/Education';
+import { BackgroundGradientDemo } from './sections/Sandbox/Sandbox';
 
 // link and button color is set by primary.main
 // it is also important to note that the only 'offical' attributes of 'text' are primary, secondary and disabled, the other attributes are custom and are used in the typography section, in getDesignTokens
@@ -159,6 +160,8 @@ function App() {
 				<div id='page-wrapper'>
 					<div className='section'>
 						<Intro />
+
+						<BackgroundGradientDemo />
 					</div>
 
 					<div className='section' id='about'>

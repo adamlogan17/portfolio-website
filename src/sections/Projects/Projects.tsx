@@ -8,6 +8,7 @@ import JavaLogo from '../../assets/images/javaLogo2.png';
 import WebTech from '../../assets/images/webTech.png';
 import CPlusPlusLogo from '../../assets/images/c++Logo.png';
 import ReactLogo from '../../assets/images/react.svg';
+import ProjectGrouping from '../../components/ProjectGrouping/ProjectGrouping';
 
 const pythonLogoDetails: Image = {
 	src: PythonLogo,
@@ -103,6 +104,10 @@ export default function Projects() {
 						projectUrl={project.projectUrl}
 					/>
 				))}
+			</div>
+
+			<div className='row'>
+				<ProjectGrouping cards={projects} />
 			</div>
 		</>
 	);

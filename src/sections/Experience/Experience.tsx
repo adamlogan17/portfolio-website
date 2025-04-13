@@ -17,41 +17,40 @@ const experienceDetails: Institution[] = [
 			alt: 'PwC Logo'
 		},
 		role: [
-      {
-        roleName: 'Ministry of Defence', // (04/03/2024 -  29/03/2024)
-        dateRange: 'Mar 2024',
-        description: (
-          <>
-            <p>
-              While working with the Ministry of Defence, I assisted in developing a new Data & Digital strategy for the
-              Royal Navy in regards to ship maintenance. Not only did I work with colleagues from PwC but I also worked
-              directly with PA consulting and V-Ships. My role consisted of gathering advice and feedback from SMEs across
-              the consortium, and then consolidating this information into a comprehensive report.
-            </p>
-          </>
-        )
-      },
-      {
-        roleName: 'Bank of England',
-        dateRange: 'Jan 2024 - Feb 2024', // (15/01/2024 -  01/03/2024)
-        description: (
-          <>
-            <p>
-              During my time with the Bank of England, I concurrently worked on two workstreams. One focused on 
-              scrutinising the Bank's cutover plan for the RTGS system, overseeing CHAPS and other payment methods, 
-              while the other involved evaluating the configuration of four critical Oracle databases.
-            </p>
+			{
+				roleName: 'Ministry of Defence', // (04/03/2024 -  29/03/2024)
+				dateRange: 'Mar 2024',
+				description: (
+					<>
+						<p>
+							While working with the Ministry of Defence, I assisted in developing a new Data & Digital strategy for the
+							Royal Navy in regards to ship maintenance. Not only did I work with colleagues from PwC but I also worked
+							directly with PA consulting and V-Ships. My role consisted of gathering advice and feedback from SMEs
+							across the consortium, and then consolidating this information into a comprehensive report.
+						</p>
+					</>
+				)
+			},
+			{
+				roleName: 'Bank of England',
+				dateRange: 'Jan 2024 - Feb 2024', // (15/01/2024 -  01/03/2024)
+				description: (
+					<>
+						<p>
+							During my time with the Bank of England, I concurrently worked on two workstreams. One focused on
+							scrutinising the Bank's cutover plan for the RTGS system, overseeing CHAPS and other payment methods,
+							while the other involved evaluating the configuration of four critical Oracle databases.
+						</p>
 
-            <p>
-              My responsibilities included compiling weekly status reports for the client, facilitating workshops 
-              with the Bank, and reviewing Slaughter and May's report on the failed TSB cutover in 2018 to assess 
-              potential risks in the Bank's cutover plan. Additionally, I conducted thorough analyses of Oracle 
-              documentation and the Bank's configurations to identify potential risks during the Oracle database 
-              review.
-            </p>
-          </>
-        )
-      },
+						<p>
+							My responsibilities included compiling weekly status reports for the client, facilitating workshops with
+							the Bank, and reviewing Slaughter and May's report on the failed TSB cutover in 2018 to assess potential
+							risks in the Bank's cutover plan. Additionally, I conducted thorough analyses of Oracle documentation and
+							the Bank's configurations to identify potential risks during the Oracle database review.
+						</p>
+					</>
+				)
+			},
 			{
 				roleName: 'Prototype Development',
 				dateRange: 'Jun 2023 - Jul 2023', // (05/06/2023 -  28/07/2023)

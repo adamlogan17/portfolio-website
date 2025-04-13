@@ -1,0 +1,65 @@
+img {
+    width: 100%;
+    margin:auto;  
+    border-radius: 25px;
+}
+
+.card {
+    margin: 20px;
+    width: 300px;
+}
+
+.card-text, .card-title {
+    text-align: center;
+    color: black;
+}
+
+.card-btn {
+    background-color: rgb(52, 158, 158);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 200px;
+}
+
+#background {
+    overflow: hidden;
+    background-color: #1f2235;
+}
+
+#about {
+    background-color: #313552;
+}
+
+.m-heading {
+    font-family: "Roboto Slab", serif;
+    font-size: 5rem;
+}
+
+.b-heading {
+    color: #0496FF;
+}
+
+
+.about-text, .m-heading, .b-heading, #hello-intro, p, h4, h3 {
+    text-align: center;
+}
+
+/*
+p, h4, h5, i {
+    text-align: center;
+}*/
+
+#intro, .place {
+    margin: auto;
+}
+
+
+
+#middle {
+    margin: 0%;
+}
+
+.icon {
+    margin: auto;
+    margin-left: 60%;
+}

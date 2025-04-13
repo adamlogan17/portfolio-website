@@ -3,6 +3,7 @@
   - [Libraries](#libraries)
     - [Libraries Used](#libraries-used)
     - [Potential Libraries](#potential-libraries)
+  - [QR Code](#qr-code)
   - [TODOS](#todos)
 
 # portfolio-website
@@ -13,7 +14,11 @@ Within this website you can learn about myself, my work experience and about my 
 
 ## How do I get started?
 
-You can visit the website [here](https://adam-logan-portfolio.netlify.app/) or you can clone this repository and execute the command `npm run dev`
+You can visit the website [here](https://adam-logan-portfolio.netlify.app/). You can also clone this repository and execute the command `npm run dev`.
+
+Alternatively you can scan the QR code below!
+
+<img src="./src/assets/images/qrCode.svg" alt="QR Code for the site" width="200" height="200">
 
 ## Libraries
 
@@ -24,6 +29,12 @@ You can visit the website [here](https://adam-logan-portfolio.netlify.app/) or y
 ### Potential Libraries
 
 - [react-awesome-reveal](https://react-awesome-reveal.morello.dev/docs/getting-started)
+
+## QR Code
+
+TO generate the QR code, use [this](https://www.qrcode-monkey.com/) site.
+
+Use [this](https://imagecolorpicker.com/) site to get the hex value from an image. This is useful if wanting to match the background of QR code, to the background of what is going to be put on.
 
 ## TODOS
 

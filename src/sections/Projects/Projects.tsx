@@ -5,9 +5,10 @@ import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import AzureLogo from '../../assets/images/azureNoNameLogo.png';
 import PythonLogo from '../../assets/images/pythonLogo2.png';
 import JavaLogo from '../../assets/images/javaLogo2.png';
-import WebTech from '../../assets/images/webTech.png';
+// import WebTech from '../../assets/images/webTech.png';
 import CPlusPlusLogo from '../../assets/images/c++Logo.png';
 import ReactLogo from '../../assets/images/react.svg';
+import AppScriptLogo from '../../assets/images/googleAppsScriptLogo.png';
 
 const pythonLogoDetails: Image = {
 	src: PythonLogo,
@@ -30,12 +31,23 @@ const ReactLogoDetails: Image = {
 	alt: 'React logo'
 };
 
+const AppScriptDetails: Image = {
+	src: AppScriptLogo,
+	alt: 'Google Apps Script logo'
+};
+
 const projects: ProjectCard[] = [
 	{
 		title: 'Final Year Project',
 		text: 'This is my final year project in which many technologies, such as react, nodejs, python, docker and powershell is used. Currently this only shows the submission for my first semester.',
 		projectUrl: 'https://github.com/adamlogan17/final-year-project',
 		img: ReactLogoDetails
+	},
+	{
+		title: 'Omniplex G-Suite Integration',
+		text: 'Provides G-Suite integration for Omniplex cinemas and can be used as an alternative to the Omniplex app.',
+		projectUrl: 'https://github.com/adamlogan17/omniplex-to-google-calendar',
+		img: AppScriptDetails
 	},
 	{
 		title: 'Systems Development Coursework',
@@ -58,15 +70,15 @@ const projects: ProjectCard[] = [
 			alt: 'Azure Logo'
 		}
 	},
-	{
-		title: 'Web Technology Coursework',
-		text: 'This is the escape room game which I submitted for my Web Tech coursework.',
-		projectUrl: 'https://github.com/adamlogan17/web-tech-coursework',
-		img: {
-			src: WebTech,
-			alt: 'HTML, CSS and JavaScript logos'
-		}
-	},
+	// {
+	// 	title: 'Web Technology Coursework',
+	// 	text: 'This is the escape room game which I submitted for my Web Tech coursework.',
+	// 	projectUrl: 'https://github.com/adamlogan17/web-tech-coursework',
+	// 	img: {
+	// 		src: WebTech,
+	// 		alt: 'HTML, CSS and JavaScript logos'
+	// 	}
+	// },
 	{
 		title: 'A-Level Coursework',
 		text: 'This is the hotel booking system which I submitted for my Computer Science A-Level coursework.',

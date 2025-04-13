@@ -36,8 +36,8 @@ const microsoftAvatar: Image = {
 };
 
 const awsLogo: Image = {
-  src: AWS,
-  alt: 'AWS Logo'
+	src: AWS,
+	alt: 'AWS Logo'
 };
 
 const qualifications: DownloadItem[] = [
@@ -55,7 +55,7 @@ const qualifications: DownloadItem[] = [
 		download: 'https://www.credly.com/badges/37c52349-f1e9-4cd1-985e-4886d5aab234/public_url',
 		avatar: awsLogo
 	},
-  {
+	{
 		name: 'AWS Certified AI Practitioner',
 		download: 'https://www.credly.com/badges/ca0e8cd0-3942-4137-8647-f4c1f86a52c4/public_url',
 		avatar: awsLogo
@@ -168,12 +168,12 @@ export default function About() {
 				within my day-to-day work.
 			</p>
 
-      <p>
-        I also volunteer at Acorn Primary School through the Time to Code programme, where I teach P7 students how to 
-        use Scratch, helping them build foundational programming skills. This experience has strengthened my ability to 
-        communicate technical concepts clearly to non-technical audiences and reflects my enthusiasm for making technology 
-        more accessible.
-      </p>
+			<p>
+				I also volunteer at Acorn Primary School through the Time to Code programme, where I teach P7 students how to
+				use Scratch, helping them build foundational programming skills. This experience has strengthened my ability to
+				communicate technical concepts clearly to non-technical audiences and reflects my enthusiasm for making
+				technology more accessible.
+			</p>
 
 			<Typography variant='h4'>Technical Skills</Typography>
 

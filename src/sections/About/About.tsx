@@ -168,6 +168,13 @@ export default function About() {
 				within my day-to-day work.
 			</p>
 
+      <p>
+        I also volunteer at Acorn Primary School through the Time to Code programme, where I teach P7 students how to 
+        use Scratch, helping them build foundational programming skills. This experience has strengthened my ability to 
+        communicate technical concepts clearly to non-technical audiences and reflects my enthusiasm for making technology 
+        more accessible.
+      </p>
+
 			<Typography variant='h4'>Technical Skills</Typography>
 
 			<CustomImage src={CurrentTechSkills} alt='Tech Skills Logos' boxShadow={false} width='70%' />

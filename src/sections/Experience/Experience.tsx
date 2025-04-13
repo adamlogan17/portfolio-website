@@ -23,6 +23,21 @@ const experienceDetails: Institution[] = [
 				description: (
 					<>
 						<p>
+							At EverQuote, I work within the Machine Learning Engineering team, supporting the deployment and
+							maintenance of models for an insurance comparison platform. I manage essential services like{' '}
+							<i>JupyterLab</i> and <i>MLflow</i>, and oversee an internal tool that delivers models as endpoints via a
+							Model-as-a-Service (MaaS) architecture. This involves assisting Data Scientists with deployment,
+							monitoring model performance, and developing new features to improve deployment efficiency and tracking.
+							I've led major initiatives including a data enrichment layer for standardised model inputs and an
+							automated retraining system using <i>AWS SageMaker</i>, collaborating closely with Analytics teams and
+							building <i>CI/CD pipelines</i> with <i>GitHub Actions</i>. I've also contributed to an AI-driven project
+							automating <i>Snowflake</i> table documentation using <i>prompt engineering</i> and{' '}
+							<i>RAG architecture</i>. These responsibilities have strengthened my expertise in <i>AWS</i>,{' '}
+							<i>Kubernetes</i>, and <i>Django</i>, and highlight my ability to work across <i>platform engineering</i>,{' '}
+							<i>DevOps</i>, and <i>data engineering</i> while{' '}
+							<i>communicating effectively with internal stakeholders</i>.
+						</p>
+						{/* <p>
 							At EverQuote, I work within the Machine Learning Engineering team, where I support data scientists by
 							managing essential services like JupyterLab and MLflow for model development. I oversee an internal tool
 							that provides models as endpoints using a Model as a Service (MaaS) architecture. I also manage an
@@ -31,7 +46,7 @@ const experienceDetails: Institution[] = [
 							models, as well as the monitoring the performance of these models. I contribute to developing new features
 							for the tool to improve the efficiency of model deployment and performance tracking. This role has
 							deepened my expertise in AWS, Kubernetes, and Django.
-						</p>
+						</p> */}
 					</>
 				)
 			}

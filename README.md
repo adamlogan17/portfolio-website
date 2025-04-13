@@ -20,6 +20,8 @@ Alternatively you can scan the QR code below!
 
 <img src="./src/assets/images/qrCode.svg" alt="QR Code for the site" width="200" height="200">
 
+Note that the background colour should be set to `#EBE7EC`, to match the background of the column when the `.docx` file is converted to a `.pdf`. Use `#ECE7E7`, if just keeping in the `.docx` format.
+
 ## Libraries
 
 ### Libraries Used
@@ -48,3 +50,4 @@ Use [this](https://imagecolorpicker.com/) site to get the hex value from an imag
   - <https://dev.to/rashidshamloo/material-ui-customization-typescript-2hba>
 - Maybe copy the colour theme from <https://medium.com/heuristics/react-dark-mode-switch-in-material-ui-dashboard-82fcf1cded66>
 - SVGs in TypeScript <https://stackoverflow.com/questions/44717164/unable-to-import-svg-files-in-typescript>
+- Add prettier as a GitHub Action
